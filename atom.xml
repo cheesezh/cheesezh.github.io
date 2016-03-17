@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-17T01:39:26.343Z</updated>
+  <updated>2016-03-17T06:38:59.192Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,51 +16,585 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>My new Post</title>
-    <link href="http://yoursite.com/2016/03/16/My-new-Post/"/>
-    <id>http://yoursite.com/2016/03/16/My-new-Post/</id>
-    <published>2016-03-16T07:28:02.000Z</published>
-    <updated>2016-03-17T01:39:26.343Z</updated>
+    <title>新加坡Mozat-算法工程师-第1+2+3轮面试</title>
+    <link href="http://yoursite.com/2016/03/17/mozat-algorithm-1st-2nd-3rd-round-interview/"/>
+    <id>http://yoursite.com/2016/03/17/mozat-algorithm-1st-2nd-3rd-round-interview/</id>
+    <published>2016-03-17T06:35:33.000Z</published>
+    <updated>2016-03-17T06:38:59.192Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;haha-my-name-is-zhanghe&quot;&gt;&lt;a href=&quot;#haha-my-name-is-zhanghe&quot; class=&quot;headerlink&quot; title=&quot;haha my name is zhanghe&quot;&gt;&lt;/a&gt;haha my name is zhanghe&lt;/h1&gt;&lt;p&gt;this is the first paragraph~&lt;/p&gt;
-&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;a += &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;haha-my-name-is-zhanghe&quot;&gt;&lt;a href=&quot;#haha-my-name-is-zhanghe&quot; class=&quot;headerlink&quot; title=&quot;haha my name is zhanghe&quot;&gt;&lt;/a&gt;haha my name is z
-    
-    </summary>
-    
-      <category term="测试" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>My new Post2</title>
-    <link href="http://yoursite.com/2016/03/16/old-post/"/>
-    <id>http://yoursite.com/2016/03/16/old-post/</id>
-    <published>2016-03-16T07:28:02.000Z</published>
-    <updated>2016-03-17T02:07:07.291Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;first-level&quot;&gt;&lt;a href=&quot;#first-level&quot; class=&quot;headerlink&quot; title=&quot;first level&quot;&gt;&lt;/a&gt;first level&lt;/h1&gt;&lt;p&gt;this is the first paragraph~&lt;/p&gt;
-&lt;h2 id=&quot;second-level&quot;&gt;&lt;a href=&quot;#second-level&quot; class=&quot;headerlink&quot; title=&quot;second level&quot;&gt;&lt;/a&gt;second level&lt;/h2&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;a += &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h1 id=&quot;first-level-1&quot;&gt;&lt;a href=&quot;#first-level-1&quot; class=&quot;headerlink&quot; title=&quot;first level&quot;&gt;&lt;/a&gt;first level&lt;/h1&gt;&lt;p&gt;haha  another test sentence.&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;面试概况&quot;&gt;&lt;a href=&quot;#面试概况&quot; class=&quot;headerlink&quot; title=&quot;面试概况&quot;&gt;&lt;/a&gt;面试概况&lt;/h1&gt;&lt;p&gt;【一小部分题目忘记了】&lt;br&gt;2016/02/19 中午11：00-下午13：00&lt;/p&gt;
+&lt;p&gt;#第一轮面试：1100-1130，机器学习&lt;/p&gt;
+&lt;p&gt;（1）设计一个系统，实现搜索引擎侧边栏的相关推荐的功能。&lt;/p&gt;
+&lt;p&gt;网页=》提取文本=》预处理（SEG，POS，NER，PARSE）=》实体抽取=》实体关系抽取=》构件知识库=》进行推荐；&lt;/p&gt;
+&lt;p&gt;（2）分词原理，3-gram中的四字成语怎么办？&lt;/p&gt;
+&lt;p&gt;n-gram&lt;/p&gt;
+&lt;p&gt;（3）词性标注的功能是什么？命名实体识别是什么？对句法分析的了解？停用词？&lt;/p&gt;
+&lt;p&gt;pos是识别动名词等等；&lt;/p&gt;
+&lt;p&gt;ner是识别人名，地名，机构名，时间等；&lt;/p&gt;
+&lt;p&gt;句法分析效率较低，对文本长度限制严格，例如stanford 的句法分析文本长度限制170个字符；&lt;/p&gt;
+&lt;p&gt;（4）设计一个系统实现实体抽取？&lt;/p&gt;
+&lt;p&gt;将实体抽取转化为标注问题，然后使用hmm模型进行训练和标注；&lt;/p&gt;
+&lt;p&gt;介绍了hmm的训练数据，模型的训练，模型的标注；&lt;/p&gt;
+&lt;p&gt;（5）HMM的参数包含哪些？其训练以及预测过程是怎样的？&lt;/p&gt;
+&lt;p&gt;介绍了hmm的三个组成（一个隐马尔科夫链，一个状态序列，一个观察序列）&lt;br&gt;三个参数（状态转移概率矩阵，发射矩阵，初始状态分布）&lt;/p&gt;
+&lt;p&gt;训练算法（mle算法和em算法）；&lt;/p&gt;
+&lt;p&gt;预测算法（viterbi算法）；&lt;/p&gt;
+&lt;p&gt;（6）稀疏矩阵的存储？数据平滑？&lt;/p&gt;
+&lt;p&gt;稀疏矩阵转换为1维线性结构；&lt;/p&gt;
+&lt;p&gt;拉普拉斯平滑，防止概率为0的情况出现；&lt;/p&gt;
+&lt;p&gt;（7）MLE与EM&lt;/p&gt;
+&lt;p&gt;mle的原理是大数定理，适用于有监督训练；&lt;/p&gt;
+&lt;p&gt;em的原理是使用上一次的结果进行迭代训练，用于训练含有隐藏变量的情况，适用于无监督训练；&lt;/p&gt;
+&lt;h2 id=&quot;第二轮面试：1130-1215，后台开发&quot;&gt;&lt;a href=&quot;#第二轮面试：1130-1215，后台开发&quot; class=&quot;headerlink&quot; title=&quot;第二轮面试：1130-1215，后台开发&quot;&gt;&lt;/a&gt;第二轮面试：1130-1215，后台开发&lt;/h2&gt;&lt;p&gt;（1）熟悉MySQL吗？使用什么存储引擎？&lt;/p&gt;
+&lt;p&gt;用过MySQL，负责编写后台API中的php代码sql语句；&lt;/p&gt;
+&lt;p&gt;InnoDB（默认的）&lt;/p&gt;
+&lt;p&gt;（2）InnoDB和MyISAM的区别？原理？&lt;/p&gt;
+&lt;p&gt;InnoDB采用B+树，叶结点为数据（部分指针），支持范围查询；&lt;/p&gt;
+&lt;p&gt;MyISAM采用B-树，叶结点为指针；&lt;/p&gt;
+&lt;p&gt;（4）如何实现1小时内只能登录5次？&lt;/p&gt;
+&lt;p&gt;设计一个登录日志表，记录用户登录信息；&lt;/p&gt;
+&lt;p&gt;（面试官提示：使用Redis缓存数据库）&lt;/p&gt;
+&lt;p&gt;（5）http事务解析过程？&lt;/p&gt;
+&lt;p&gt;域名解析=》dns解析=》tcp连接=》http请求=》服务器解析=》web root目录=》解析页面文件=》html代码=》浏览器解析html代码=》下载资源文件&lt;/p&gt;
+&lt;p&gt;（6）如何实现n条数据随机取m条？并证明概率是m/n？可否通过一次遍历实现该功能？&lt;/p&gt;
+&lt;p&gt;一个n序列，一个m序列，m次随机，从n中选取，如果冲突，就再随机；&lt;/p&gt;
+&lt;p&gt;一个n序列，以m/n的概率随机选取；（面试官给出的方法）&lt;/p&gt;
+&lt;p&gt;（7）如果数据n不确定，随机取m条，如何实现？&lt;/p&gt;
+&lt;p&gt;前m条全部取出，然后第m+1条，以1/(m+1)的概率和前边一条数据置换，依次类推；&lt;/p&gt;
+&lt;p&gt;（8）Apache和Nginx对比？&lt;/p&gt;
+&lt;p&gt;Apache多进程，占用内存，消耗资源；&lt;/p&gt;
+&lt;p&gt;Nginx多线程，节省资源，更适合反向代理以及静态文件，适合用于虚拟机；&lt;/p&gt;
+&lt;h2 id=&quot;第三轮面试：1215-1300，CEO谈心&quot;&gt;&lt;a href=&quot;#第三轮面试：1215-1300，CEO谈心&quot; class=&quot;headerlink&quot; title=&quot;第三轮面试：1215-1300，CEO谈心&quot;&gt;&lt;/a&gt;第三轮面试：1215-1300，CEO谈心&lt;/h2&gt;&lt;p&gt;（1）想了解公司哪些方面？&lt;/p&gt;
+&lt;p&gt;技术团队；&lt;/p&gt;
+&lt;p&gt;（2）未来三年计划？&lt;/p&gt;
+&lt;p&gt;个人能力（技术方面，团队协作）&lt;/p&gt;
+&lt;p&gt;（3）薪资期望？&lt;/p&gt;
+&lt;p&gt;4000sg&lt;/p&gt;
+&lt;p&gt;（4）业余爱好？&lt;/p&gt;
+&lt;p&gt;跑步，读书，徒步&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;first-level&quot;&gt;&lt;a href=&quot;#first-level&quot; class=&quot;headerlink&quot; title=&quot;first level&quot;&gt;&lt;/a&gt;first level&lt;/h1&gt;&lt;p&gt;this is the first paragraph~&lt;/p&gt;
-&lt;
+      &lt;h1 id=&quot;面试概况&quot;&gt;&lt;a href=&quot;#面试概况&quot; class=&quot;headerlink&quot; title=&quot;面试概况&quot;&gt;&lt;/a&gt;面试概况&lt;/h1&gt;&lt;p&gt;【一小部分题目忘记了】&lt;br&gt;2016/02/19 中午11：00-下午13：00&lt;/p&gt;
+&lt;p&gt;#第一轮面试：1100-1
     
     </summary>
     
-      <category term="编程语言" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+      <category term="求职经验" scheme="http://yoursite.com/categories/%E6%B1%82%E8%81%8C%E7%BB%8F%E9%AA%8C/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="面试" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>科大讯飞-自然语言处理研究员-第1+2轮面试</title>
+    <link href="http://yoursite.com/2016/03/17/kedaxunfei-nlp-1st-2nd-round-interview/"/>
+    <id>http://yoursite.com/2016/03/17/kedaxunfei-nlp-1st-2nd-round-interview/</id>
+    <published>2016-03-17T06:29:16.000Z</published>
+    <updated>2016-03-17T06:34:34.218Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;面试概况&quot;&gt;&lt;a href=&quot;#面试概况&quot; class=&quot;headerlink&quot; title=&quot;面试概况&quot;&gt;&lt;/a&gt;面试概况&lt;/h1&gt;&lt;p&gt;面试时间：2016年2月19日 16：00-16：50&lt;/p&gt;
+&lt;p&gt;面试形式：视频面试&lt;/p&gt;
+&lt;p&gt;面试次数：2轮面试&lt;/p&gt;
+&lt;h1 id=&quot;面试内容&quot;&gt;&lt;a href=&quot;#面试内容&quot; class=&quot;headerlink&quot; title=&quot;面试内容&quot;&gt;&lt;/a&gt;面试内容&lt;/h1&gt;&lt;h2 id=&quot;第一轮面试（机器学习，数据挖掘）&quot;&gt;&lt;a href=&quot;#第一轮面试（机器学习，数据挖掘）&quot; class=&quot;headerlink&quot; title=&quot;第一轮面试（机器学习，数据挖掘）&quot;&gt;&lt;/a&gt;第一轮面试（机器学习，数据挖掘）&lt;/h2&gt;&lt;p&gt;Q：自我介绍？&lt;/p&gt;
+&lt;p&gt;简单介绍学习背景，项目经历，研究方向等。&lt;/p&gt;
+&lt;p&gt;Q：怎样申请出国留学？&lt;/p&gt;
+&lt;p&gt;介绍了一下。&lt;/p&gt;
+&lt;p&gt;Q：研究经历？&lt;/p&gt;
+&lt;p&gt;nlp方向，信息抽取，事件抽取。&lt;/p&gt;
+&lt;p&gt;Q：什么是事件？事件定义？&lt;/p&gt;
+&lt;p&gt;Q：基于n元模型的怎么做事件抽取的？&lt;/p&gt;
+&lt;p&gt;Q：基于hmm怎么做事件抽取的？HMM的原理？&lt;/p&gt;
+&lt;p&gt;Q：基于pLSA怎么做话题抽取的？pLSA的原理？&lt;/p&gt;
+&lt;p&gt;Q：医疗社区数据是什么？数据量多大？&lt;/p&gt;
+&lt;p&gt;Q：采用的分类模型，都知道原理吗？&lt;/p&gt;
+&lt;p&gt;Q：决策树的选择依据是什么？&lt;/p&gt;
+&lt;p&gt;A：（决策树三个要素：特征选择（信息增益：ID3，信息增益比：C4.5），生成，剪枝）&lt;/p&gt;
+&lt;p&gt;Q：知识表示中的知识是什么？介绍一下项目中使用的三种知识表示形式？&lt;/p&gt;
+&lt;p&gt;Q：LDA的作用是什么？&lt;/p&gt;
+&lt;p&gt;Q：如何选择领域词？&lt;/p&gt;
+&lt;p&gt;Q：pLSA和LDA的区别是什么？&lt;/p&gt;
+&lt;h2 id=&quot;第二轮面试（后台开发）&quot;&gt;&lt;a href=&quot;#第二轮面试（后台开发）&quot; class=&quot;headerlink&quot; title=&quot;第二轮面试（后台开发）&quot;&gt;&lt;/a&gt;第二轮面试（后台开发）&lt;/h2&gt;&lt;p&gt;Q：都做过哪些项目？&lt;/p&gt;
+&lt;p&gt;Q：本科用MFC做过的小时钟，残缺棋盘可视化，基于socket的聊天室；&lt;br&gt;研究生，hybrid app，采用lamp系统架构，后台采用Yii2.0 framework；&lt;br&gt;熟悉C/C++和Python，PHP；&lt;/p&gt;
+&lt;p&gt;这个面试官问的问题不多。。。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;面试概况&quot;&gt;&lt;a href=&quot;#面试概况&quot; class=&quot;headerlink&quot; title=&quot;面试概况&quot;&gt;&lt;/a&gt;面试概况&lt;/h1&gt;&lt;p&gt;面试时间：2016年2月19日 16：00-16：50&lt;/p&gt;
+&lt;p&gt;面试形式：视频面试&lt;/p&gt;
+&lt;p&gt;面试次数：2轮面试&lt;
+    
+    </summary>
+    
+      <category term="求职经验" scheme="http://yoursite.com/categories/%E6%B1%82%E8%81%8C%E7%BB%8F%E9%AA%8C/"/>
+    
+    
+      <category term="面试" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搜狐-自然语言处理工程师-第3轮面试</title>
+    <link href="http://yoursite.com/2016/03/17/souhu-nlp-3rd-round-interview/"/>
+    <id>http://yoursite.com/2016/03/17/souhu-nlp-3rd-round-interview/</id>
+    <published>2016-03-17T06:18:26.000Z</published>
+    <updated>2016-03-17T06:24:11.249Z</updated>
+    
+    <content type="html">&lt;p&gt;#面试概况&lt;/p&gt;
+&lt;p&gt;2016/03/04  17：30 电话面试（没通过）&lt;/p&gt;
+&lt;p&gt;#面试心得&lt;/p&gt;
+&lt;p&gt;在回答面试官的问题之前没有认真思考，态度不够积极端正。&lt;/p&gt;
+&lt;p&gt;#面试内容&lt;/p&gt;
+&lt;p&gt;Q：简单介绍一下自己做过的项目，自己觉得有亮点的地方；&lt;/p&gt;
+&lt;p&gt;A：主要介绍了一下研究生期间做的事件抽取和访学期间做的文本分类；&lt;/p&gt;
+&lt;p&gt;简单介绍了一下其他项目；&lt;/p&gt;
+&lt;font color=&quot;red&quot;&gt;（虽然介绍了项目，但是感觉只是介绍了项目的大概，没有突出亮点）&lt;/font&gt;
+
+&lt;p&gt;Q：你觉得自己的优势是什么，竞争力有哪些？&lt;/p&gt;
+&lt;p&gt;A：（这个之前没想过。。。）接触自然语言处理时间比较长。&lt;/p&gt;
+&lt;p&gt;Q：你做的**项目的创新点有哪些？结论有哪些？&lt;/p&gt;
+&lt;p&gt;A：相关研究比较少，SVM效果好，term-based效果好。（这个回答的也不好。。。）&lt;/p&gt;
+&lt;p&gt;Q：你做的这些项目中，有哪些不是导师安排的，导师让你做的，而是你自己想做的？&lt;/p&gt;
+&lt;p&gt;A：&lt;font color=&quot;red&quot;&gt;（当时我想，这些项目都是有和导师讨论的，于是我就说）&lt;/font&gt;研究生期间这些都是有导师安排的，本科期间倒是自己做过一些小软件。。。&lt;font color=&quot;red&quot;&gt;（说到一半的时候，我就想，我面试的是算法岗位，感觉说这个没啥用）&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;（其实仔细想想，之前做的项目，基本都是导师定了方向，然后自己去想方法，想模型，其实也是自己主动去做的，自己想做的，所以说，这个问题回答的不好。）&lt;/p&gt;
+&lt;p&gt;Q：你在13年末到15年初，有做哪些项目？&lt;/p&gt;
+&lt;p&gt;A：做事件抽取，一些成果。（没有说全）&lt;/p&gt;
+&lt;p&gt;Q：你用过这么多模型 是你自己写的代码？还是调用的第三方库？&lt;/p&gt;
+&lt;p&gt;A：有一个项目里的HMM模型是自己写的，因为对模型本身进行了改动；有一个项目里的模型是直接调用第三方库，因为模型较多，主要是做方法对比；&lt;/p&gt;
+&lt;font color=&quot;red&quot;&gt;（朋友建议：需要自己改进和创新的 自己写；比如什么什么 如果只是用于做对比，就调用的第三库 比如什么什么 每个项目中都有自己写的一部分；有的调用了第三方库）&lt;/font&gt;
+
+&lt;p&gt;Q：你用这么多模型，你对模型了解吗？&lt;/p&gt;
+&lt;p&gt;A：了解&lt;/p&gt;
+&lt;p&gt;Q：说说对KNN的了解？&lt;/p&gt;
+&lt;p&gt;A：KNN就是把样例看作空间中的一个个单元，然后对于一个新的实例，找到离它最近的K个实例，再根据这K个实例划分类别。KNN包含三个要素：K值的选择，距离的度量，类别决策函数。&lt;/p&gt;
+&lt;p&gt;（朋友建议：这样说的就是背起来的，你应该举个例子讲，结合项目讲。）&lt;/p&gt;
+&lt;p&gt;听同学讲的其他面试题：&lt;/p&gt;
+&lt;p&gt;A：一同学在小米实习过 去面百度 技术面差不多了总监问为什么不留在小米&lt;/p&gt;
+&lt;p&gt;A：他也是蒙比了 不喜欢小米所在的项目组 更喜欢百度的技术环境&lt;/p&gt;
+&lt;p&gt;A：百度总监说，那如果你来我们这了发现也不喜欢怎么办  他就愣住了 &lt;/p&gt;
+&lt;p&gt;A：让总监觉得他忠诚度不高  不能做一行爱一行吧&lt;/p&gt;
+&lt;p&gt;A：其实总监是希望招那种做一行爱一行  忠诚度高  对技术很爱钻研的吧。  所以回答任何问题之前（包括技术问题） 都要三思  不要暴露自己的问题 &lt;/p&gt;
+&lt;p&gt;B：以前面试上海的顺丰 别人问我以后怎么打算的 我说可能在上海打几年工 然后会考虑回武汉发展&lt;br&gt;C：现在觉得应该怎么回答？&lt;/p&gt;
+&lt;p&gt;B：我要在上海好好干 然后买房定居。。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#面试概况&lt;/p&gt;
+&lt;p&gt;2016/03/04  17：30 电话面试（没通过）&lt;/p&gt;
+&lt;p&gt;#面试心得&lt;/p&gt;
+&lt;p&gt;在回答面试官的问题之前没有认真思考，态度不够积极端正。&lt;/p&gt;
+&lt;p&gt;#面试内容&lt;/p&gt;
+&lt;p&gt;Q：简单介绍一下自己做过的项目，自己觉得有亮点的地方；&lt;
+    
+    </summary>
+    
+      <category term="求职经验" scheme="http://yoursite.com/categories/%E6%B1%82%E8%81%8C%E7%BB%8F%E9%AA%8C/"/>
+    
+    
+      <category term="面试" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搜狐-自然语言处理工程师-第1+2轮面试</title>
+    <link href="http://yoursite.com/2016/03/17/souhu-nlp-1st-2nd-round-interview/"/>
+    <id>http://yoursite.com/2016/03/17/souhu-nlp-1st-2nd-round-interview/</id>
+    <published>2016-03-17T05:57:25.000Z</published>
+    <updated>2016-03-17T06:17:02.462Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;面试概况&quot;&gt;&lt;a href=&quot;#面试概况&quot; class=&quot;headerlink&quot; title=&quot;面试概况&quot;&gt;&lt;/a&gt;面试概况&lt;/h1&gt;&lt;p&gt;面试时间：2016年3月1日 14：00-15：07&lt;/p&gt;
+&lt;p&gt;面试形式：电话面试&lt;/p&gt;
+&lt;p&gt;面试数量：两轮面试；&lt;/p&gt;
+&lt;p&gt;面试官：一位NLP面试官，一位code面试官；&lt;/p&gt;
+&lt;h1 id=&quot;面试内容&quot;&gt;&lt;a href=&quot;#面试内容&quot; class=&quot;headerlink&quot; title=&quot;面试内容&quot;&gt;&lt;/a&gt;面试内容&lt;/h1&gt;&lt;h2 id=&quot;第一轮面试：NLP相关&quot;&gt;&lt;a href=&quot;#第一轮面试：NLP相关&quot; class=&quot;headerlink&quot; title=&quot;第一轮面试：NLP相关&quot;&gt;&lt;/a&gt;第一轮面试：NLP相关&lt;/h2&gt;&lt;p&gt;1.简单介绍自己&lt;/p&gt;
+&lt;p&gt;2.从简历中挑选两个最典型的项目&lt;/p&gt;
+&lt;p&gt;（1）事件抽取&lt;/p&gt;
+&lt;p&gt;简单介绍事件抽取；&lt;/p&gt;
+&lt;p&gt;Q：事件的定义？&lt;/p&gt;
+&lt;p&gt;A：这个也是国内所做项目涉及的概念，一种结构化知识的方法。&lt;/p&gt;
+&lt;p&gt;N元模型》Hybrid HMMs（这个Hyrbid HMMs是我自己改进的）&lt;/p&gt;
+&lt;p&gt;Q：Hybrid HMMs与HMM有何区别？&lt;/p&gt;
+&lt;p&gt;A：如实回答。&lt;/p&gt;
+&lt;p&gt; （2）医疗社区用户生成数据分析&lt;/p&gt;
+&lt;p&gt;简单介绍工作内容；&lt;/p&gt;
+&lt;p&gt;Q：对NB，KNN，DT，SVM各种模型的理解？&lt;/p&gt;
+&lt;p&gt;A：介绍对NB的理解，先验概率，条件概率，联合概率，后验概率。。。&lt;/p&gt;
+&lt;p&gt;Q：NB有哪些不足？&lt;/p&gt;
+&lt;p&gt;A：没答上来。（面试官：条件独立性假设导致的不足）&lt;/p&gt;
+&lt;p&gt;Q：如何用SVM做多分类？&lt;/p&gt;
+&lt;p&gt;A：1 vs. rest&lt;/p&gt;
+&lt;p&gt;Q：一共多少类？具体如何做的？&lt;/p&gt;
+&lt;p&gt;A：10类，十个svm&lt;/p&gt;
+&lt;p&gt;Q：这样会导致什么问题？&lt;/p&gt;
+&lt;p&gt;A：数据不均衡&lt;/p&gt;
+&lt;p&gt;Q：如何解决？&lt;/p&gt;
+&lt;p&gt;A：欠采样，从其余9类中抽部分数据&lt;/p&gt;
+&lt;p&gt;Q：还有一种方式？&lt;/p&gt;
+&lt;p&gt;A：1 vs 1&lt;/p&gt;
+&lt;p&gt;Q：对，这种方式比第一种方式要好&lt;/p&gt;
+&lt;p&gt;Q：如何对SVM优化？&lt;/p&gt;
+&lt;p&gt;A：SMO&lt;/p&gt;
+&lt;p&gt;Q：讲讲SMO原理？&lt;/p&gt;
+&lt;p&gt;A：线性问题》拉格朗日对偶化》拉格朗日因子向量》每次选择2个进行拉格朗日因子进行优化，把大问题分解为小问题；&lt;/p&gt;
+&lt;p&gt;Q：介绍项目中的几种表示方式？&lt;/p&gt;
+&lt;p&gt;A：如实回答。&lt;/p&gt;
+&lt;p&gt;Q：实验结果怎么样?&lt;/p&gt;
+&lt;p&gt;A：几种模型中SVM最好，几种知识表示方式取决于数据量，数据量少的情况下term-based最好，领域词典次之，lda-based最差。&lt;/p&gt;
+&lt;p&gt;Q：有没有尝试几种模型的组合？加权重；几种知识表示方式的组合？连接；&lt;/p&gt;
+&lt;p&gt;A：没有。&lt;/p&gt;
+&lt;p&gt;Q：给一批新闻语料，想办法把他们按地域分类（北京，上海，深圳）&lt;/p&gt;
+&lt;p&gt;A：从中提取名词，人物，地点，根据这些特征进行分类&lt;/p&gt;
+&lt;p&gt;Q：如何获取地点知识库？&lt;/p&gt;
+&lt;p&gt;A：半结构化知识，结构化知识，非结构化知识。&lt;/p&gt;
+&lt;p&gt;百度百科，新闻，社交网络（面试官提示：采用地图API获取地点信息）&lt;/p&gt;
+&lt;p&gt;Q：假设你追一个女孩子，表白成功的概率为p，如果表白被拒绝，你的信心下降，表白成功的概率会衰减为p = λ*p，问表白成功所需次数的期望值是多少？&lt;/p&gt;
+&lt;p&gt;A：不会。&lt;/p&gt;
+&lt;p&gt;Q：介绍科研成果&lt;/p&gt;
+&lt;p&gt;A：如实回答。&lt;/p&gt;
+&lt;p&gt;6.向面试官提问&lt;/p&gt;
+&lt;p&gt;（1）团队规模？&lt;/p&gt;
+&lt;p&gt;计划扩展到20人，目前有7人。&lt;/p&gt;
+&lt;p&gt;（2）具体工作？&lt;/p&gt;
+&lt;p&gt;主要负责搜狐新闻的推荐、分类、质量评估等；&lt;/p&gt;
+&lt;p&gt;（3）入职培训？&lt;/p&gt;
+&lt;p&gt;入职有集体培训，组内每周五有讨论；&lt;/p&gt;
+&lt;h2 id=&quot;第二轮面试：编程&quot;&gt;&lt;a href=&quot;#第二轮面试：编程&quot; class=&quot;headerlink&quot; title=&quot;第二轮面试：编程&quot;&gt;&lt;/a&gt;第二轮面试：编程&lt;/h2&gt;&lt;p&gt;使用熟悉的语言，编程实现链表的插入，删除和查找；&lt;/p&gt;
+&lt;p&gt;听到题目的时候有点蒙，对于这道题目的印象还停留在学习C语言的时候（09年）。&lt;/p&gt;
+&lt;p&gt;【下边的代码是我面试时候写的，存在很多不足，都加了相应注释，正确版本也不难，可以参考我以前写的&lt;a href=&quot;http://www.cnblogs.com/CheeseZH/archive/2012/10/10/2718988.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《二叉树的一些操作》&lt;/a&gt;。】&lt;/p&gt;
+&lt;p&gt;关于语言，从Python和C中选择了C，涉及到指针的时候，还是使用C更舒服。&lt;/p&gt;
+&lt;p&gt;【完成功能的过程中遇到一些坎坷，不过面试官最后的评价：编码风格，命名以及缩进都不错。】&lt;/p&gt;
+&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;struct&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; val;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Node * next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125; Node;&lt;span class=&quot;comment&quot;&gt;//很久没有使用C自定义结构体，有些不熟练&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;Node* &lt;span class=&quot;title&quot;&gt;insert&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(Node *head, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; val)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;span class=&quot;comment&quot;&gt;//【面】插入返回值应为bool，而非链表指针Node *&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//【面】如何从尾部插入？【我】一直next，知道next为空。【面】改进？【我】循环链表，尾部指向头部（错误）【面】增加一个tail结点&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Node *tmp = (Node *)&lt;span class=&quot;built_in&quot;&gt;malloc&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;sizeof&lt;/span&gt;(Node));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    tmp-&amp;gt;val = val;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    tmp-&amp;gt;next = head-&amp;gt;next;&lt;span class=&quot;comment&quot;&gt;//【面】为什么把head改成head-&amp;gt;next？【我】取决于第一个元素是否有值。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    head-&amp;gt;next = tmp;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; head;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;deleteNode&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(Node *head, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; val)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (head-&amp;gt;next == &lt;span class=&quot;literal&quot;&gt;NULL&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Node *tmp = head;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (tmp-&amp;gt;next != &lt;span class=&quot;literal&quot;&gt;NULL&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (tmp-&amp;gt;next-&amp;gt;val == val) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            Node *tmp_del = tmp-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            tmp-&amp;gt;next = tmp_del-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;built_in&quot;&gt;free&lt;/span&gt;(tmp_del);    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        tmp-&amp;gt;next = tmp-&amp;gt;next-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;findNode&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(Node *head, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; val)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;span class=&quot;comment&quot;&gt;//【面】这个findNode应该返回Node *，而不是bool&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (head-&amp;gt;next == &lt;span class=&quot;literal&quot;&gt;NULL&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Node *tmp = head;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (tmp-&amp;gt;next != &lt;span class=&quot;literal&quot;&gt;NULL&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (tmp-&amp;gt;next-&amp;gt;val == vall) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        tmp-&amp;gt;next = tmp-&amp;gt;next-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;面试概况&quot;&gt;&lt;a href=&quot;#面试概况&quot; class=&quot;headerlink&quot; title=&quot;面试概况&quot;&gt;&lt;/a&gt;面试概况&lt;/h1&gt;&lt;p&gt;面试时间：2016年3月1日 14：00-15：07&lt;/p&gt;
+&lt;p&gt;面试形式：电话面试&lt;/p&gt;
+&lt;p&gt;面试数量：两轮面试；&lt;
+    
+    </summary>
+    
+      <category term="求职经验" scheme="http://yoursite.com/categories/%E6%B1%82%E8%81%8C%E7%BB%8F%E9%AA%8C/"/>
+    
+    
+      <category term="面试" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>饿了么-算法工程师-第1轮面试</title>
+    <link href="http://yoursite.com/2016/03/17/eleme-algorithm-1st-round-interview/"/>
+    <id>http://yoursite.com/2016/03/17/eleme-algorithm-1st-round-interview/</id>
+    <published>2016-03-17T05:50:54.000Z</published>
+    <updated>2016-03-17T05:56:16.516Z</updated>
+    
+    <content type="html">&lt;p&gt;#面试概况&lt;/p&gt;
+&lt;p&gt;面试时间：2016年3月9日 14：30&lt;/p&gt;
+&lt;p&gt;面试时长：22分钟（十有八九又挂了）&lt;/p&gt;
+&lt;p&gt;面试形式：电话面试&lt;/p&gt;
+&lt;p&gt;#面试心得&lt;/p&gt;
+&lt;p&gt;面试岗位为算法工程师，并没有问太多关于自然语言处理，机器学习等方向相关的问题。&lt;/p&gt;
+&lt;p&gt;面试问题主要集中于编程语言、数据结构、基本算法、性能优化（算法/系统）等基础知识。&lt;/p&gt;
+&lt;p&gt;总的来说，主要有两点不足：&lt;/p&gt;
+&lt;p&gt;（1）基础不扎实，没有做好基础只是的准备工作；&lt;/p&gt;
+&lt;p&gt;（2）态度不端正，没有认真分析面试官的问题；&lt;/p&gt;
+&lt;p&gt;#面试内容&lt;/p&gt;
+&lt;p&gt;1.简单介绍一下自己&lt;/p&gt;
+&lt;p&gt;2.编程语言&lt;/p&gt;
+&lt;p&gt;（1）使用哪种语言熟练些？&lt;/p&gt;
+&lt;p&gt;Python&lt;/p&gt;
+&lt;p&gt;（2）Python中is和==的区别？&lt;/p&gt;
+&lt;p&gt;（3）Python的print输出什么？&lt;/p&gt;
+&lt;p&gt;a = 1&lt;/p&gt;
+&lt;p&gt;b = 1&lt;/p&gt;
+&lt;p&gt;print a is b&lt;/p&gt;
+&lt;p&gt;（4）了解Python装饰器吗？&lt;/p&gt;
+&lt;p&gt;不了解&lt;/p&gt;
+&lt;p&gt;（5）Python和C++比性能上有所欠缺，有做过Python性能优化吗？&lt;/p&gt;
+&lt;p&gt;没有&lt;/p&gt;
+&lt;p&gt;3.数据结构和算法&lt;/p&gt;
+&lt;p&gt;（1）有用过哪些数据结构？&lt;/p&gt;
+&lt;p&gt;链表，二叉树，队列，栈等。&lt;/p&gt;
+&lt;p&gt;（2）如何找到二叉树中两个结点的最近公共祖先？&lt;/p&gt;
+&lt;p&gt;思路：&lt;/p&gt;
+&lt;p&gt;找到从根节点到第一个结点的路径；&lt;/p&gt;
+&lt;p&gt;找到从根节点到第二个结点的路径；&lt;/p&gt;
+&lt;p&gt;从前向后对比两个路径，第一个不同的结点的前一个结点就是所求结点；&lt;/p&gt;
+&lt;p&gt;（3）时间复杂度是多少？&lt;/p&gt;
+&lt;p&gt;时间复杂度为O(logN)；&lt;/p&gt;
+&lt;p&gt;（4）如果进行n次查找，时间复杂度是多少？&lt;/p&gt;
+&lt;p&gt;n次查找时间复杂度为O(N*logN)&lt;/p&gt;
+&lt;p&gt;（5）有什么改进的方法吗？&lt;/p&gt;
+&lt;p&gt;改进思路：加缓存（随口说的）&lt;/p&gt;
+&lt;p&gt;（6）讲讲快速排序的原理？&lt;/p&gt;
+&lt;p&gt;首先找一个基准元素；&lt;/p&gt;
+&lt;p&gt;然后比它小的放在左边，比它大的放在右边；&lt;/p&gt;
+&lt;p&gt;递归处理左半部分和右半部分；&lt;/p&gt;
+&lt;p&gt;（7）时间复杂度是多少？&lt;/p&gt;
+&lt;p&gt;理想情况下时间复杂度为O(N*logN)&lt;/p&gt;
+&lt;p&gt;最坏情况下时间复杂度为O(N*N)&lt;/p&gt;
+&lt;p&gt;（8）列举一个最坏情况下的例子？&lt;/p&gt;
+&lt;p&gt;最坏情况下的例子：完全相反的顺序（这个答案不对）&lt;/p&gt;
+&lt;p&gt;4.项目&lt;/p&gt;
+&lt;p&gt;（1）爬虫怎么做的？&lt;/p&gt;
+&lt;p&gt;调用API（面试官：那这个不是网页解析的那种爬虫。）&lt;/p&gt;
+&lt;p&gt;（其实有做过自己解析网页的爬虫，但是忘了和面试官说）&lt;/p&gt;
+&lt;p&gt;（2）做过哪些比较完整的大型项目吗？&lt;/p&gt;
+&lt;p&gt;一个Hybrid App开发&lt;/p&gt;
+&lt;p&gt;（3）介绍一下项目使用了哪些技术？&lt;/p&gt;
+&lt;p&gt;整体架构Linux，Apache，MySQL，PHP；&lt;/p&gt;
+&lt;p&gt;后台使用Yii2.0框架；&lt;/p&gt;
+&lt;p&gt;前端使用Ionic框架；&lt;/p&gt;
+&lt;p&gt;（4）遇到了哪些问题以及是如何解决的？&lt;/p&gt;
+&lt;p&gt;遇到过图片体积过大的问题，通过图像压缩解决。&lt;/p&gt;
+&lt;p&gt;（5）前端和后台的通信协议是什么？&lt;/p&gt;
+&lt;p&gt;http协议（不知道他想问啥。。。）&lt;/p&gt;
+&lt;p&gt;（6）.遇到性能问题应该如何提高？&lt;/p&gt;
+&lt;p&gt;没做过性能优化&lt;/p&gt;
+&lt;p&gt;（虽然没做过，但是当时应该从服务器（Apache/Nginx），数据库（数据库引擎/索引/缓存数据库）两方面谈一下。）&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#面试概况&lt;/p&gt;
+&lt;p&gt;面试时间：2016年3月9日 14：30&lt;/p&gt;
+&lt;p&gt;面试时长：22分钟（十有八九又挂了）&lt;/p&gt;
+&lt;p&gt;面试形式：电话面试&lt;/p&gt;
+&lt;p&gt;#面试心得&lt;/p&gt;
+&lt;p&gt;面试岗位为算法工程师，并没有问太多关于自然语言处理，机器学习等方向相关的问题。&lt;
+    
+    </summary>
+    
+      <category term="求职经验" scheme="http://yoursite.com/categories/%E6%B1%82%E8%81%8C%E7%BB%8F%E9%AA%8C/"/>
+    
+    
+      <category term="面试" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新浪-自然语言处理工程师-第1轮面试</title>
+    <link href="http://yoursite.com/2016/03/17/sina-nlp-1st-round-interview/"/>
+    <id>http://yoursite.com/2016/03/17/sina-nlp-1st-round-interview/</id>
+    <published>2016-03-17T05:41:58.000Z</published>
+    <updated>2016-03-17T05:54:28.678Z</updated>
+    
+    <content type="html">&lt;p&gt;#面试概况&lt;/p&gt;
+&lt;p&gt;面试时间：2016/03/10 15：00-16：15&lt;/p&gt;
+&lt;p&gt;面试形式：电话面试&lt;/p&gt;
+&lt;p&gt;面试岗位：自然语言处理工程师&lt;/p&gt;
+&lt;p&gt;面试持续时间较长，部分题目记不起来了。&lt;/p&gt;
+&lt;p&gt;#面试内容&lt;/p&gt;
+&lt;p&gt;（1）做一下自我介绍&lt;/p&gt;
+&lt;p&gt;【经过前几轮面试的洗礼，这次专门准备了一下，效果不错。】&lt;/p&gt;
+&lt;p&gt;我是。。。&lt;/p&gt;
+&lt;p&gt;13年9月-15年4月期间。。。【科研项目1】。。。&lt;/p&gt;
+&lt;p&gt;15年4月-今。。。【科研项目2】。。。&lt;/p&gt;
+&lt;p&gt;除了科研项目。。。【工程项目】。。。&lt;/p&gt;
+&lt;p&gt;除了上边提到的三个周期比较长，规模比较大的项目之外。。。【小项目】。。。&lt;/p&gt;
+&lt;p&gt;此外，本科期间。。。【ACM】。。。&lt;/p&gt;
+&lt;p&gt;（2）针对【科研项目2】进行了一系列提问&lt;/p&gt;
+&lt;p&gt;Q：项目中用到的模型是自己开发实现？还是调用第三方库？&lt;/p&gt;
+&lt;p&gt;A：调用第三方库。&lt;/p&gt;
+&lt;p&gt;Q：使用的这些模型，哪个模型效果最好？&lt;/p&gt;
+&lt;p&gt;A：SVM&lt;/p&gt;
+&lt;p&gt;Q：为什么不尝试用K-means之类的方法？&lt;/p&gt;
+&lt;p&gt;A：K-means是聚类，项目中做的是分类&lt;/p&gt;
+&lt;p&gt;Q：为什么不直接使用这种方法，一个类别下边有很多特征词，然后计算每个文本和这些词之间的距离，进行分类？&lt;/p&gt;
+&lt;p&gt;A：这个方法太简单了吧。（不知道说啥）&lt;/p&gt;
+&lt;p&gt;Q：既然做分类，那么需要分类的数据是什么？类别都有哪些？&lt;/p&gt;
+&lt;p&gt;A：balabala。。。&lt;/p&gt;
+&lt;p&gt;Q：项目中用到的伪标注数据是指什么？&lt;/p&gt;
+&lt;p&gt;A：balabala。。。&lt;/p&gt;
+&lt;p&gt;（3）在线编程（注意：下边的代码是错误重重的）&lt;/p&gt;
+&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;69&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/*&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;题目：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;给定一个二维数组input和一个字符串target；&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;input是rows行，cols列的二维数组，二维数组中每个元素为一个字符；&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;target是一个长度为len的字符串；&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;例如&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;char[][] input = &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123;&#39;a&#39;, &#39;b&#39;, &#39;c&#39;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123;&#39;t&#39;, &#39;e&#39;, &#39;f&#39;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123;&#39;e&#39;, &#39;o&#39;, &#39;s&#39;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;char[] target = &#39;abe&#39;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;问题：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;在二维数组中是否存在一条路径能够和target相匹配。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;在上边的例子中，字符串&#39;abe&#39;,&#39;beo&#39;,&#39;cfeb&#39;等就符合条件，而字符串&#39;abt&#39;,&#39;atoe&#39;就不符合条件。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;约束条件：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;（1）二维数组中的每个字符只能使用一次&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;（2）从一个点跳向另一个点是，只能走上下左右四个方向&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt;[][] input, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; rows, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; cols, &lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt;[] target, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; len, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; idx)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i, j;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;bool&lt;/span&gt; flag = &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; rows &amp;amp;&amp;amp; !flag; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (j = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; j &amp;lt; cols &amp;amp;&amp;amp; !flag; j++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (input[i][j] == target[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                flag |= search_recursive(input, i, j , rows, cols, target, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; flag;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;search_recursive&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt;[][] input, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; row, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; col, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; rows, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; cols, &lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt;[] target, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; len, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; idx)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;bool&lt;/span&gt; ret = &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//terminate&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (idx == len) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//try right&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// idx = 0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (col + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; &amp;lt; cols &amp;amp;&amp;amp; input[row][col + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;] == target[idx + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ret |= search_recursive(input, row, col + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, rows, cols, target, len, idx + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt; == ret) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; ret;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//try down&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (row + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; &amp;lt; rows &amp;amp;&amp;amp; input[row + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;][col] == target[idx + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ret |= search_recursive(input, row + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, col, rows, cols, target, len, idx + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt; == ret) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; ret;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//try left&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (col - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; &amp;gt;= &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; &amp;amp;&amp;amp; input[row][col - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;] == target[idx + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ret |= search_recursive(input, row, col - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, rows, cols, target, len, idx + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt; == ret) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; ret;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//try up&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (row - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; &amp;gt;= &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; &amp;amp;&amp;amp; input[row - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;][col] == target[idx + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ret |= search_recursive(input, row - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, col, rows, cols, target, len, idx + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; ret;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;分析+编码，大概用了20分钟左右，思路如下：&lt;/p&gt;
+&lt;p&gt;&lt;1&gt;这是一个图的搜索问题，可以用&lt;font color=&quot;red&quot;&gt;深度优先搜索&lt;/font&gt;；&lt;/1&gt;&lt;/p&gt;
+&lt;p&gt;&lt;2&gt;因为每一步跳越都是类似的，所以可以用&lt;font color=&quot;red&quot;&gt;递归&lt;/font&gt;方法来做；&lt;/2&gt;&lt;/p&gt;
+&lt;p&gt;于是我就在search中找到第一个符合标准的点，找到之后利用research_recursive进行递归查找；&lt;/p&gt;
+&lt;p&gt;编码完成，开始提问：&lt;/p&gt;
+&lt;p&gt;Q：你忘了每个字符只能用一次？&lt;/p&gt;
+&lt;p&gt;A：好像是忘记了，这会导致在两个点之间来回跳跃。我可以用一个大小为len*2的二维数组作为辅助空间tmp来记录搜索路径，对于第i步来讲，tmp[i][0]和tmp[i][1]就是坐标x和y。在搜索的时候，如果这个点之前已经访问过了，那么就回溯。&lt;/p&gt;
+&lt;p&gt;Q：假设现在要搜索的字符串为“&lt;strong&gt;*&lt;/strong&gt;”，你跟我讲一下tmp的操作过程。&lt;/p&gt;
+&lt;p&gt;A：。。。tmp数组可以看作一个栈，balabala，入栈，出栈。。。&lt;/p&gt;
+&lt;p&gt;Q：那就是说每次都要线性扫描一次？&lt;/p&gt;
+&lt;p&gt;A：哦（恍然大悟），可以用一个辅助二维数组，大小与input相同，专门用来记录是否被访问过，例如初始化为0表示未访问，如果访问过就设置为1，这样每次只需要根据坐标就可以在O(1)时间内完成判断。&lt;/p&gt;
+&lt;p&gt;Q：你的代码还有一个问题，如果target长度为1，那么你的代码会怎样运行？&lt;/p&gt;
+&lt;p&gt;A：（看了一下代码）对哦，好像忘记这个特殊情况了，这可能会导致在递归函数中出现数组下标越界的问题，可以在search中进行一个判断用来避免这个问题，此外，在递归search函数中的4个if语句中也需要加一个这样的判断。&lt;/p&gt;
+&lt;p&gt;Q：这个问题就到这里吧。你熟悉设计模式吗？&lt;/p&gt;
+&lt;p&gt;A：以前本科时候上过这门课，但是之后就再没专门学习过。&lt;/p&gt;
+&lt;p&gt;Q：用C++或Java实现一个单例模式。&lt;/p&gt;
+&lt;p&gt;A：我试试。。。（过了一会儿）。。。不会&lt;/p&gt;
+&lt;p&gt;Q：那你知道单例模式吗？&lt;/p&gt;
+&lt;p&gt;A：知道。。。balabala。。。&lt;/p&gt;
+&lt;p&gt;（4）介绍一个自己比较熟悉的模型&lt;/p&gt;
+&lt;p&gt;介绍的HMM。&lt;/p&gt;
+&lt;p&gt;三个组成（隐马链，状态序列，观测序列）。&lt;/p&gt;
+&lt;p&gt;模型参数含义（A，B，π）。&lt;/p&gt;
+&lt;p&gt;改进之处。&lt;/p&gt;
+&lt;p&gt;参数训练方法（极大似然估计）。&lt;/p&gt;
+&lt;p&gt;viterbi预测算法。&lt;/p&gt;
+&lt;p&gt;（5）应聘者提问&lt;/p&gt;
+&lt;p&gt;Q：你手上有其他offer吗？&lt;/p&gt;
+&lt;p&gt;A：。。。&lt;/p&gt;
+&lt;p&gt;Q：你有什么问题要问我的吗？&lt;/p&gt;
+&lt;p&gt;A：团队规模？&lt;/p&gt;
+&lt;p&gt;Q：。。。&lt;/p&gt;
+&lt;p&gt;A：工作内容？&lt;/p&gt;
+&lt;p&gt;Q：。。。&lt;/p&gt;
+&lt;p&gt;A：新人培训？&lt;/p&gt;
+&lt;p&gt;Q：。。。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#面试概况&lt;/p&gt;
+&lt;p&gt;面试时间：2016/03/10 15：00-16：15&lt;/p&gt;
+&lt;p&gt;面试形式：电话面试&lt;/p&gt;
+&lt;p&gt;面试岗位：自然语言处理工程师&lt;/p&gt;
+&lt;p&gt;面试持续时间较长，部分题目记不起来了。&lt;/p&gt;
+&lt;p&gt;#面试内容&lt;/p&gt;
+&lt;p&gt;（1）做一下自我介绍
+    
+    </summary>
+    
+      <category term="求职经验" scheme="http://yoursite.com/categories/%E6%B1%82%E8%81%8C%E7%BB%8F%E9%AA%8C/"/>
+    
+    
+      <category term="面试" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新浪-自然语言处理工程师-第2轮面试</title>
+    <link href="http://yoursite.com/2016/03/17/sina-nlp-2nd-round-interview/"/>
+    <id>http://yoursite.com/2016/03/17/sina-nlp-2nd-round-interview/</id>
+    <published>2016-03-17T05:28:33.000Z</published>
+    <updated>2016-03-17T05:54:36.727Z</updated>
+    
+    <content type="html">&lt;p&gt;#面试概况&lt;/p&gt;
+&lt;p&gt;面试形式：QQ语音&lt;/p&gt;
+&lt;p&gt;面试时间：2016／3／11  20:30-21:40&lt;/p&gt;
+&lt;p&gt;面试岗位：新浪－产品技术部－自然语言处理工程师&lt;/p&gt;
+&lt;p&gt;面试时间较长，问题较多较杂，so，应该遗漏了一些。&lt;/p&gt;
+&lt;p&gt;#面试内容&lt;/p&gt;
+&lt;p&gt;（1）个人简介&lt;/p&gt;
+&lt;p&gt;（2）项目&lt;/p&gt;
+&lt;p&gt;Q：怎么用N元模型做事件抽取的？&lt;/p&gt;
+&lt;p&gt;A：N元模型用来将细粒度的词合并为语块或短语，然后根据规则抽取事件。&lt;/p&gt;
+&lt;p&gt;Q：怎么用隐马模型做事件抽取的？&lt;/p&gt;
+&lt;p&gt;A：把事件抽取问题转化为标注问题，给分词过后的序列打标签。&lt;/p&gt;
+&lt;p&gt;Q：改进隐马模型有哪些改进的方面？&lt;/p&gt;
+&lt;p&gt;A：隐马模型有两个序列：一个状态序列，一个观测序列。&lt;/p&gt;
+&lt;p&gt;改进包括三个方面：&lt;/p&gt;
+&lt;p&gt;《1》第一个方面就是，HMM有一个假设是齐次马尔科夫性假设，t时刻的状态只与t－1时刻的状态有关，这会导致很多条件概率的缺失，为了降低条件概率的损失，对其进行扩展，令t时刻的状态与t－1和t－2时刻的状态有关，也就是将转移概率aij扩展为aijk，将观测值生成概率bi(k)扩展为bij(k)。原来的话是2-gram，现在将其扩展为3-gram；&lt;/p&gt;
+&lt;p&gt;《2》第二个改进就是采用多个观测序列，原始HMM是一个状态序列和一个观测序列，用观测序列去推测状态序列，使用多个观测序列的方法就是用多个观测序列去预测状态序列，这样可以考虑多维特征；&lt;/p&gt;
+&lt;p&gt;《3》第三个改进就是利用统计与规则相结合的思想，对先用HMM对训练数据进行预测，然后使用预测之后结果中有正确的，有错误的，对那些错误的实例，使用K－means方法进行聚类分析，得到一系列的错误纠正规则，然后用这些规则对HMM的预测结果进行修正。&lt;/p&gt;
+&lt;p&gt;Q：HMM是自己写代码实现的吗？&lt;/p&gt;
+&lt;p&gt;A：是，因为对HMM进行了改进，所以要自己实现。&lt;/p&gt;
+&lt;p&gt;Q：有编码实现前向－后向算法吗？&lt;/p&gt;
+&lt;p&gt;A：在改进的HMM中没有使用前向－后向算法拟合参数，而是采用的极大似然估计MLE，因为我使用的语料是标注过的，也就是有监督的，前向－后向算法是采用EM算法思想来进行无监督参数拟合，而且我在原始HMM中对比过两种算法，在有监督的情况下，MLE的效果优于前向－后向算法。&lt;/p&gt;
+&lt;p&gt;Q：假设现在有10个点，要你分成3类，讲一讲K－means算法流程？&lt;/p&gt;
+&lt;p&gt;A：。。。balabala。。。&lt;/p&gt;
+&lt;p&gt;Q：什么时候结束？&lt;/p&gt;
+&lt;p&gt;A：我知道的有两种方法：&lt;/p&gt;
+&lt;p&gt;《1》设置迭代次数；&lt;/p&gt;
+&lt;p&gt;《2》相邻的两次迭代结果的簇中心偏移程度——误差平方和小于某个阈值；&lt;/p&gt;
+&lt;p&gt;（3）面向对象语言&lt;/p&gt;
+&lt;p&gt;Q：你熟悉Java或C++吗？&lt;/p&gt;
+&lt;p&gt;A：本科时候主要使用C／C++，研究生期间主要用Python，研一的时候有用过Java。&lt;/p&gt;
+&lt;p&gt;Q：你听说过拷贝构造函数吗？&lt;font color=&quot;red&quot;&gt;【C++，面向对象程序设计】&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;A：听说过&lt;/p&gt;
+&lt;p&gt;Q：解释一下你对拷贝构造函数的理解？&lt;/p&gt;
+&lt;p&gt;A：比如有一个类Car，然后new 了一个对象是BMW，现在又需要一辆BMW，我们就可以重新new一个对象，然后用这个BMW作为参数用来初始化这个新的Car，这样我们就得到2个BMW。&lt;/p&gt;
+&lt;p&gt;（4）SVM&lt;/p&gt;
+&lt;p&gt;Q：讲讲你对SVM的理解？&lt;font color=&quot;red&quot;&gt;【SVM的理解】&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;A：2分类；最大间隔；&lt;/p&gt;
+&lt;p&gt;Q：这个最大间隔是什么？&lt;/p&gt;
+&lt;p&gt;A：点到分割超平面的最大间隔。&lt;/p&gt;
+&lt;p&gt;Q：谁到谁的最大间隔？&lt;/p&gt;
+&lt;p&gt;A：到分隔超平面最近的点到分割超平面的最大间隔。&lt;/p&gt;
+&lt;p&gt;举个例子，有4个样例点，是正方形的4个顶点，左边两个正例，右边两个负例，在中间划一条线把它们分开，这样的线有无数条，但是最大间隔的一条线就是正中间的那条，把正方形均分为两半的线，这条线到顶点的间隔就是最大间隔。&lt;/p&gt;
+&lt;p&gt;Q：SVM的目标函数是什么样子的？&lt;/p&gt;
+&lt;p&gt;A：w＊x＋b ＝ 0（这个不是面试官想要的答案）&lt;/p&gt;
+&lt;p&gt;Q：这是线性可分模型，非线性的呢？&lt;/p&gt;
+&lt;p&gt;A：函数间隔》几何间隔》原始问题》对偶问题》拉格朗日函数》拉格朗日因子向量》最后的形式是：sum sum aiajyiyjxixj＋sum ai（推导了半天，这个是拟合参数时候的公式，不是最后的目标函数，正确的应该是sum aiyiK(x,xi)＋b）&lt;/p&gt;
+&lt;p&gt;Q：如果有成千上万个样例，该怎么求解SVM目标函数？&lt;/p&gt;
+&lt;p&gt;A：SMO&lt;/p&gt;
+&lt;p&gt;Q：讲一讲SMO的原理？&lt;font color=&quot;red&quot;&gt;【SMO原理】&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;A：把大问题分解为小问题，如果求解成千上万个a难以求解的话，那么每次优化2个a，这样一步一步的完成整体优化。&lt;/p&gt;
+&lt;p&gt;Q：不用SMO方法，直接求解，应该如何解拉格朗日目标函数？&lt;/p&gt;
+&lt;p&gt;A：这个，不会。&lt;/p&gt;
+&lt;p&gt;（5）机器学习&lt;font color=&quot;red&quot;&gt;【过拟合，欠拟合】&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;Q：你知道过拟合和欠拟合吧？&lt;/p&gt;
+&lt;p&gt;A：知道。&lt;/p&gt;
+&lt;p&gt;Q：讲一下你对过拟合和欠拟合的理解？&lt;/p&gt;
+&lt;p&gt;A：过拟合就是对训练数据拟合的很好，对测试数据拟合的不好；欠拟合就是对训练数据的拟合程度不是很好，对测试数据的拟合程度稍微好些；&lt;/p&gt;
+&lt;p&gt;Q：为什么会导致过拟合？&lt;/p&gt;
+&lt;p&gt;A：数据量太少，特征太多（导致模型过于复杂，却又没有很好的泛化能力）&lt;/p&gt;
+&lt;p&gt;Q：有什么方法可以避免过拟合？&lt;/p&gt;
+&lt;p&gt;A：获取更多的数据，使用较少的特征&lt;/p&gt;
+&lt;p&gt;Q：逻辑回归的目标函数是什么？&lt;/p&gt;
+&lt;p&gt;A：y ＝ a＊x ＋ b，很久以前看过，一直没有用，所以记不清了&lt;/p&gt;
+&lt;p&gt;Q：逻辑回归是如何训练的？&lt;font color=&quot;red&quot;&gt;【逻辑回归与正则化】&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;A：不知道&lt;/p&gt;
+&lt;p&gt;Q：逻辑回归里的正则项是什么样子的？&lt;/p&gt;
+&lt;p&gt;A：记不得了&lt;/p&gt;
+&lt;p&gt;Q：逻辑回归是怎么样计算误差的？&lt;/p&gt;
+&lt;p&gt;A：真实值和预测值的误差平方和&lt;/p&gt;
+&lt;p&gt;Q：决策树中是如何选择选择特征的？&lt;/p&gt;
+&lt;p&gt;A：信息增益（ID3）信息增益比（C4.5）基尼指数（CART）&lt;/p&gt;
+&lt;p&gt;Q：信息增益和信息增益比的区别？&lt;/p&gt;
+&lt;p&gt;A：网上的资料显示，信息增益更倾向于选择属性值较多的特征，而信息增益比可以在一定程度上避免；&lt;/p&gt;
+&lt;p&gt;我自己的理解是，通过信息增益的值的大小很难评估一个特征的好坏，而信息增益比可以理解为熵减少的程度。&lt;/p&gt;
+&lt;p&gt;Q：BPNN的BP过程是做什么的？&lt;font color=&quot;red&quot;&gt;【BP神经网络】&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;A：是用来调整某个参数，记不清了。&lt;/p&gt;
+&lt;p&gt;Q：神经网络和SVM的联系和区别？&lt;font color=&quot;red&quot;&gt;【BP神经网络与SVM的关系】&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;A：SVM的函数是凸二次规划问题，这就相当于对问题做了一个存在最优解的假设，但是实际情况是谁也不知道是否有最优解；&lt;/p&gt;
+&lt;p&gt;神经网络就是有很多局部最优解，并没有全局最优解，更接近事实。&lt;/p&gt;
+&lt;p&gt;Q：你知道机器学习中哪些最优化方法？例如梯度下降等。&lt;font color=&quot;red&quot;&gt;【最优化】&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;A：以前知道梯度下降，现在记不清了。&lt;/p&gt;
+&lt;p&gt;（6）大数据&lt;/p&gt;
+&lt;p&gt;Q：有亿万个分好的词，找出出现次数最多的top k个词。&lt;font color=&quot;red&quot;&gt;【大数据】&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;A：一台机器？还是很多台？&lt;/p&gt;
+&lt;p&gt;Q：有足够的集群，你要怎么做？&lt;/p&gt;
+&lt;p&gt;A：用分布式方法，每个机器处理一部分，统计词频，然后汇总到一台机器上，得到最终的统计数据；&lt;br&gt;Q：怎么找到top k？&lt;/p&gt;
+&lt;p&gt;A：排序，然后找到前k&lt;/p&gt;
+&lt;p&gt;Q：用什么排序？&lt;/p&gt;
+&lt;p&gt;A：堆排序，这样只需要用很少的空间就可以完成排序＋查询了。&lt;/p&gt;
+&lt;p&gt;（7）数据结构&lt;/p&gt;
+&lt;p&gt;Q：二叉树排序树的查找时间复杂度？&lt;font color=&quot;red&quot;&gt;【二叉排序树】&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;A：O（log2N）&lt;/p&gt;
+&lt;p&gt;Q：最差情况的时间复杂度？&lt;/p&gt;
+&lt;p&gt;A：O(N)（一直没听明白面试官的意思，“最坏”，“最快”听不清。。。）&lt;/p&gt;
+&lt;p&gt;Q：怎么保持二叉树平衡？&lt;/p&gt;
+&lt;p&gt;A：构建平衡二叉树（具体怎么操作记不清了）&lt;/p&gt;
+&lt;p&gt;Q：你知道哪些平衡二叉树？&lt;font color=&quot;red&quot;&gt;【平衡二叉树】&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;A：平衡二叉树，红黑树（其他还有几个，记不清了）&lt;/p&gt;
+&lt;p&gt;（8）其他&lt;/p&gt;
+&lt;p&gt;Q：手上有其他offer吗？&lt;/p&gt;
+&lt;p&gt;A：没&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#面试概况&lt;/p&gt;
+&lt;p&gt;面试形式：QQ语音&lt;/p&gt;
+&lt;p&gt;面试时间：2016／3／11  20:30-21:40&lt;/p&gt;
+&lt;p&gt;面试岗位：新浪－产品技术部－自然语言处理工程师&lt;/p&gt;
+&lt;p&gt;面试时间较长，问题较多较杂，so，应该遗漏了一些。&lt;/p&gt;
+&lt;p&gt;#面试内容&lt;/p
+    
+    </summary>
+    
+      <category term="求职经验" scheme="http://yoursite.com/categories/%E6%B1%82%E8%81%8C%E7%BB%8F%E9%AA%8C/"/>
+    
+    
+      <category term="面试" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
