@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://cheesezhe.github.io/"/>
-  <updated>2016-03-17T12:34:41.999Z</updated>
+  <updated>2016-03-17T13:35:47.072Z</updated>
   <id>http://cheesezhe.github.io/</id>
   
   <author>
@@ -16,19 +16,69 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>红黑树</title>
+    <link href="http://cheesezhe.github.io/2016/03/17/introduction-of-the-red-black-tree/"/>
+    <id>http://cheesezhe.github.io/2016/03/17/introduction-of-the-red-black-tree/</id>
+    <published>2016-03-17T12:50:18.000Z</published>
+    <updated>2016-03-17T13:35:47.072Z</updated>
+    
+    <content type="html">&lt;p&gt;&amp;emsp;&amp;emsp;在了解红黑树之前，首先你要了解&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%85%83%E6%90%9C%E5%B0%8B%E6%A8%B9&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;二叉查找树&lt;/a&gt;。&lt;/p&gt;
+&lt;h1 id=&quot;红黑树的定义&quot;&gt;&lt;a href=&quot;#红黑树的定义&quot; class=&quot;headerlink&quot; title=&quot;红黑树的定义&quot;&gt;&lt;/a&gt;红黑树的定义&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;红黑树是一种二叉查找树，但在每个结点上增加一个存储位表示结点的颜色，可以是RED或者BLACK。通过对任何一条从根到叶子的路径上各个结点着色方式的限制，红黑树确保没有一条路径会比其他路径长出2倍，因而是接近平衡的。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;树中每个结点包含5个域：color，key，left，right和p。如果某结点没有一个子结点或父结点，则该结点相应的指针域（p）包含值NIL（即NULL）。我们将把这些NIL视为指向二叉查找树的外结点（叶子）的指针，而把关键字的结点视为树的内结点。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;一棵二叉查找树如果满足下面的性质，就是一棵红黑树：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;每个结点或是红色，或是黑色；&lt;/li&gt;
+&lt;li&gt;根节点是黑色；&lt;/li&gt;
+&lt;li&gt;叶结点是黑色；&lt;/li&gt;
+&lt;li&gt;红结点的儿子是黑色；&lt;/li&gt;
+&lt;li&gt;对于每个结点，从该结点到其子孙&lt;font color=&quot;red&quot;&gt;叶结点&lt;/font&gt;的所有路径上包含相同数目的黑结点。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;红黑树示意图如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../../../images/rb-tree.jpg&quot; alt=&quot;红黑树示意图&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;红黑树的应用&quot;&gt;&lt;a href=&quot;#红黑树的应用&quot; class=&quot;headerlink&quot; title=&quot;红黑树的应用&quot;&gt;&lt;/a&gt;红黑树的应用&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;红黑树的应用比较广泛，主要是用它来存储有序的数据，它的时间复杂度是\(O(log_{2}n)\)，效率非常之高。&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java的集合中的TreeSet和TreeMap&lt;/li&gt;
+&lt;li&gt;C++的STL中的set、map&lt;/li&gt;
+&lt;li&gt;Linux中虚拟内存的管理&lt;/li&gt;
+&lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;红黑树基本操作——旋转&quot;&gt;&lt;a href=&quot;#红黑树基本操作——旋转&quot; class=&quot;headerlink&quot; title=&quot;红黑树基本操作——旋转&quot;&gt;&lt;/a&gt;红黑树基本操作——旋转&lt;/h1&gt;&lt;h2 id=&quot;左旋&quot;&gt;&lt;a href=&quot;#左旋&quot; class=&quot;headerlink&quot; title=&quot;左旋&quot;&gt;&lt;/a&gt;左旋&lt;/h2&gt;&lt;h2 id=&quot;右旋&quot;&gt;&lt;a href=&quot;#右旋&quot; class=&quot;headerlink&quot; title=&quot;右旋&quot;&gt;&lt;/a&gt;右旋&lt;/h2&gt;&lt;h2 id=&quot;区分左旋和右旋&quot;&gt;&lt;a href=&quot;#区分左旋和右旋&quot; class=&quot;headerlink&quot; title=&quot;区分左旋和右旋&quot;&gt;&lt;/a&gt;区分左旋和右旋&lt;/h2&gt;&lt;h1 id=&quot;红黑树基本操作——添加&quot;&gt;&lt;a href=&quot;#红黑树基本操作——添加&quot; class=&quot;headerlink&quot; title=&quot;红黑树基本操作——添加&quot;&gt;&lt;/a&gt;红黑树基本操作——添加&lt;/h1&gt;&lt;h2 id=&quot;红叔叔&quot;&gt;&lt;a href=&quot;#红叔叔&quot; class=&quot;headerlink&quot; title=&quot;红叔叔&quot;&gt;&lt;/a&gt;红叔叔&lt;/h2&gt;&lt;h2 id=&quot;黑叔叔，右孩子&quot;&gt;&lt;a href=&quot;#黑叔叔，右孩子&quot; class=&quot;headerlink&quot; title=&quot;黑叔叔，右孩子&quot;&gt;&lt;/a&gt;黑叔叔，右孩子&lt;/h2&gt;&lt;h2 id=&quot;黑叔叔，左孩子&quot;&gt;&lt;a href=&quot;#黑叔叔，左孩子&quot; class=&quot;headerlink&quot; title=&quot;黑叔叔，左孩子&quot;&gt;&lt;/a&gt;黑叔叔，左孩子&lt;/h2&gt;&lt;h1 id=&quot;红黑树基本操作——删除&quot;&gt;&lt;a href=&quot;#红黑树基本操作——删除&quot; class=&quot;headerlink&quot; title=&quot;红黑树基本操作——删除&quot;&gt;&lt;/a&gt;红黑树基本操作——删除&lt;/h1&gt;&lt;h2 id=&quot;黑黑，红兄弟&quot;&gt;&lt;a href=&quot;#黑黑，红兄弟&quot; class=&quot;headerlink&quot; title=&quot;黑黑，红兄弟&quot;&gt;&lt;/a&gt;黑黑，红兄弟&lt;/h2&gt;&lt;h2 id=&quot;黑黑，黑兄弟，两个黑侄子&quot;&gt;&lt;a href=&quot;#黑黑，黑兄弟，两个黑侄子&quot; class=&quot;headerlink&quot; title=&quot;黑黑，黑兄弟，两个黑侄子&quot;&gt;&lt;/a&gt;黑黑，黑兄弟，两个黑侄子&lt;/h2&gt;&lt;h2 id=&quot;黑黑，黑兄弟，左红侄子，右黑侄子&quot;&gt;&lt;a href=&quot;#黑黑，黑兄弟，左红侄子，右黑侄子&quot; class=&quot;headerlink&quot; title=&quot;黑黑，黑兄弟，左红侄子，右黑侄子&quot;&gt;&lt;/a&gt;黑黑，黑兄弟，左红侄子，右黑侄子&lt;/h2&gt;&lt;h2 id=&quot;黑黑，黑兄弟，右红侄子&quot;&gt;&lt;a href=&quot;#黑黑，黑兄弟，右红侄子&quot; class=&quot;headerlink&quot; title=&quot;黑黑，黑兄弟，右红侄子&quot;&gt;&lt;/a&gt;黑黑，黑兄弟，右红侄子&lt;/h2&gt;&lt;h1 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/20545708&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;为什么STL和linux都使用红黑树作为平衡树的实现？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/skywang12345/p/3245399.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;红黑树(一)之 原理和算法详细介绍&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;《算法导论》&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;emsp;&amp;emsp;在了解红黑树之前，首先你要了解&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%85%83%E6%90%9C%E5%B0%8B%E6%A8%B9&quot; target=&quot;_blank&quot; rel=&quot;ext
+    
+    </summary>
+    
+      <category term="数据结构与算法" scheme="http://cheesezhe.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="二叉树" scheme="http://cheesezhe.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+      <category term="平衡二叉树" scheme="http://cheesezhe.github.io/tags/%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+      <category term="红黑树" scheme="http://cheesezhe.github.io/tags/%E7%BA%A2%E9%BB%91%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>新浪-自然语言处理工程师-第2轮面试</title>
     <link href="http://cheesezhe.github.io/2016/03/11/sina-nlp-2nd-round-interview/"/>
     <id>http://cheesezhe.github.io/2016/03/11/sina-nlp-2nd-round-interview/</id>
     <published>2016-03-11T15:28:33.000Z</published>
-    <updated>2016-03-17T12:34:41.999Z</updated>
+    <updated>2016-03-17T13:37:43.695Z</updated>
     
-    <content type="html">&lt;p&gt;#面试概况&lt;/p&gt;
-&lt;p&gt;面试形式：QQ语音&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;面试概况&quot;&gt;&lt;a href=&quot;#面试概况&quot; class=&quot;headerlink&quot; title=&quot;面试概况&quot;&gt;&lt;/a&gt;面试概况&lt;/h1&gt;&lt;p&gt;面试形式：QQ语音&lt;/p&gt;
 &lt;p&gt;面试时间：2016／3／11  20:30-21:40&lt;/p&gt;
 &lt;p&gt;面试岗位：新浪－产品技术部－自然语言处理工程师&lt;/p&gt;
 &lt;p&gt;面试时间较长，问题较多较杂，so，应该遗漏了一些。&lt;/p&gt;
-&lt;p&gt;#面试内容&lt;/p&gt;
-&lt;p&gt;（1）个人简介&lt;/p&gt;
+&lt;h1 id=&quot;面试内容&quot;&gt;&lt;a href=&quot;#面试内容&quot; class=&quot;headerlink&quot; title=&quot;面试内容&quot;&gt;&lt;/a&gt;面试内容&lt;/h1&gt;&lt;p&gt;（1）个人简介&lt;/p&gt;
 &lt;p&gt;（2）项目&lt;/p&gt;
 &lt;p&gt;Q：怎么用N元模型做事件抽取的？&lt;/p&gt;
 &lt;p&gt;A：N元模型用来将细粒度的词合并为语块或短语，然后根据规则抽取事件。&lt;/p&gt;
@@ -128,12 +178,9 @@
     
     <summary type="html">
     
-      &lt;p&gt;#面试概况&lt;/p&gt;
-&lt;p&gt;面试形式：QQ语音&lt;/p&gt;
+      &lt;h1 id=&quot;面试概况&quot;&gt;&lt;a href=&quot;#面试概况&quot; class=&quot;headerlink&quot; title=&quot;面试概况&quot;&gt;&lt;/a&gt;面试概况&lt;/h1&gt;&lt;p&gt;面试形式：QQ语音&lt;/p&gt;
 &lt;p&gt;面试时间：2016／3／11  20:30-21:40&lt;/p&gt;
-&lt;p&gt;面试岗位：新浪－产品技术部－自然语言处理工程师&lt;/p&gt;
-&lt;p&gt;面试时间较长，问题较多较杂，so，应该遗漏了一些。&lt;/p&gt;
-&lt;p&gt;#面试内容&lt;/p
+&lt;p&gt;面试岗位：新浪－产品
     
     </summary>
     
@@ -149,15 +196,13 @@
     <link href="http://cheesezhe.github.io/2016/03/10/sina-nlp-1st-round-interview/"/>
     <id>http://cheesezhe.github.io/2016/03/10/sina-nlp-1st-round-interview/</id>
     <published>2016-03-10T05:41:58.000Z</published>
-    <updated>2016-03-17T12:33:55.666Z</updated>
+    <updated>2016-03-17T13:38:39.649Z</updated>
     
-    <content type="html">&lt;p&gt;#面试概况&lt;/p&gt;
-&lt;p&gt;面试时间：2016/03/10 15：00-16：15&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;面试概况&quot;&gt;&lt;a href=&quot;#面试概况&quot; class=&quot;headerlink&quot; title=&quot;面试概况&quot;&gt;&lt;/a&gt;面试概况&lt;/h1&gt;&lt;p&gt;面试时间：2016/03/10 15：00-16：15&lt;/p&gt;
 &lt;p&gt;面试形式：电话面试&lt;/p&gt;
 &lt;p&gt;面试岗位：自然语言处理工程师&lt;/p&gt;
 &lt;p&gt;面试持续时间较长，部分题目记不起来了。&lt;/p&gt;
-&lt;p&gt;#面试内容&lt;/p&gt;
-&lt;p&gt;（1）做一下自我介绍&lt;/p&gt;
+&lt;h1 id=&quot;面试内容&quot;&gt;&lt;a href=&quot;#面试内容&quot; class=&quot;headerlink&quot; title=&quot;面试内容&quot;&gt;&lt;/a&gt;面试内容&lt;/h1&gt;&lt;p&gt;（1）做一下自我介绍&lt;/p&gt;
 &lt;p&gt;【经过前几轮面试的洗礼，这次专门准备了一下，效果不错。】&lt;/p&gt;
 &lt;p&gt;我是。。。&lt;/p&gt;
 &lt;p&gt;13年9月-15年4月期间。。。【科研项目1】。。。&lt;/p&gt;
@@ -220,13 +265,9 @@
     
     <summary type="html">
     
-      &lt;p&gt;#面试概况&lt;/p&gt;
-&lt;p&gt;面试时间：2016/03/10 15：00-16：15&lt;/p&gt;
+      &lt;h1 id=&quot;面试概况&quot;&gt;&lt;a href=&quot;#面试概况&quot; class=&quot;headerlink&quot; title=&quot;面试概况&quot;&gt;&lt;/a&gt;面试概况&lt;/h1&gt;&lt;p&gt;面试时间：2016/03/10 15：00-16：15&lt;/p&gt;
 &lt;p&gt;面试形式：电话面试&lt;/p&gt;
-&lt;p&gt;面试岗位：自然语言处理工程师&lt;/p&gt;
-&lt;p&gt;面试持续时间较长，部分题目记不起来了。&lt;/p&gt;
-&lt;p&gt;#面试内容&lt;/p&gt;
-&lt;p&gt;（1）做一下自我介绍
+&lt;p&gt;面试岗位：自然语言处
     
     </summary>
     
@@ -242,20 +283,17 @@
     <link href="http://cheesezhe.github.io/2016/03/09/eleme-algorithm-1st-round-interview/"/>
     <id>http://cheesezhe.github.io/2016/03/09/eleme-algorithm-1st-round-interview/</id>
     <published>2016-03-09T08:50:54.000Z</published>
-    <updated>2016-03-17T12:35:09.377Z</updated>
+    <updated>2016-03-17T13:39:03.697Z</updated>
     
-    <content type="html">&lt;p&gt;#面试概况&lt;/p&gt;
-&lt;p&gt;面试时间：2016年3月9日 14：30&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;面试概况&quot;&gt;&lt;a href=&quot;#面试概况&quot; class=&quot;headerlink&quot; title=&quot;面试概况&quot;&gt;&lt;/a&gt;面试概况&lt;/h1&gt;&lt;p&gt;面试时间：2016年3月9日 14：30&lt;/p&gt;
 &lt;p&gt;面试时长：22分钟（十有八九又挂了）&lt;/p&gt;
 &lt;p&gt;面试形式：电话面试&lt;/p&gt;
-&lt;p&gt;#面试心得&lt;/p&gt;
-&lt;p&gt;面试岗位为算法工程师，并没有问太多关于自然语言处理，机器学习等方向相关的问题。&lt;/p&gt;
+&lt;h1 id=&quot;面试心得&quot;&gt;&lt;a href=&quot;#面试心得&quot; class=&quot;headerlink&quot; title=&quot;面试心得&quot;&gt;&lt;/a&gt;面试心得&lt;/h1&gt;&lt;p&gt;面试岗位为算法工程师，并没有问太多关于自然语言处理，机器学习等方向相关的问题。&lt;/p&gt;
 &lt;p&gt;面试问题主要集中于编程语言、数据结构、基本算法、性能优化（算法/系统）等基础知识。&lt;/p&gt;
 &lt;p&gt;总的来说，主要有两点不足：&lt;/p&gt;
 &lt;p&gt;（1）基础不扎实，没有做好基础只是的准备工作；&lt;/p&gt;
 &lt;p&gt;（2）态度不端正，没有认真分析面试官的问题；&lt;/p&gt;
-&lt;p&gt;#面试内容&lt;/p&gt;
-&lt;p&gt;1.简单介绍一下自己&lt;/p&gt;
+&lt;h1 id=&quot;面试内容&quot;&gt;&lt;a href=&quot;#面试内容&quot; class=&quot;headerlink&quot; title=&quot;面试内容&quot;&gt;&lt;/a&gt;面试内容&lt;/h1&gt;&lt;p&gt;1.简单介绍一下自己&lt;/p&gt;
 &lt;p&gt;2.编程语言&lt;/p&gt;
 &lt;p&gt;（1）使用哪种语言熟练些？&lt;/p&gt;
 &lt;p&gt;Python&lt;/p&gt;
@@ -312,12 +350,9 @@
     
     <summary type="html">
     
-      &lt;p&gt;#面试概况&lt;/p&gt;
-&lt;p&gt;面试时间：2016年3月9日 14：30&lt;/p&gt;
+      &lt;h1 id=&quot;面试概况&quot;&gt;&lt;a href=&quot;#面试概况&quot; class=&quot;headerlink&quot; title=&quot;面试概况&quot;&gt;&lt;/a&gt;面试概况&lt;/h1&gt;&lt;p&gt;面试时间：2016年3月9日 14：30&lt;/p&gt;
 &lt;p&gt;面试时长：22分钟（十有八九又挂了）&lt;/p&gt;
-&lt;p&gt;面试形式：电话面试&lt;/p&gt;
-&lt;p&gt;#面试心得&lt;/p&gt;
-&lt;p&gt;面试岗位为算法工程师，并没有问太多关于自然语言处理，机器学习等方向相关的问题。&lt;
+&lt;p&gt;面试形式：电话面
     
     </summary>
     
@@ -333,14 +368,11 @@
     <link href="http://cheesezhe.github.io/2016/03/04/souhu-nlp-3rd-round-interview/"/>
     <id>http://cheesezhe.github.io/2016/03/04/souhu-nlp-3rd-round-interview/</id>
     <published>2016-03-04T11:18:26.000Z</published>
-    <updated>2016-03-17T12:35:47.904Z</updated>
+    <updated>2016-03-17T13:39:21.825Z</updated>
     
-    <content type="html">&lt;p&gt;#面试概况&lt;/p&gt;
-&lt;p&gt;2016/03/04  17：30 电话面试（没通过）&lt;/p&gt;
-&lt;p&gt;#面试心得&lt;/p&gt;
-&lt;p&gt;在回答面试官的问题之前没有认真思考，态度不够积极端正。&lt;/p&gt;
-&lt;p&gt;#面试内容&lt;/p&gt;
-&lt;p&gt;Q：简单介绍一下自己做过的项目，自己觉得有亮点的地方；&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;面试概况&quot;&gt;&lt;a href=&quot;#面试概况&quot; class=&quot;headerlink&quot; title=&quot;面试概况&quot;&gt;&lt;/a&gt;面试概况&lt;/h1&gt;&lt;p&gt;2016/03/04  17：30 电话面试（没通过）&lt;/p&gt;
+&lt;h1 id=&quot;面试心得&quot;&gt;&lt;a href=&quot;#面试心得&quot; class=&quot;headerlink&quot; title=&quot;面试心得&quot;&gt;&lt;/a&gt;面试心得&lt;/h1&gt;&lt;p&gt;在回答面试官的问题之前没有认真思考，态度不够积极端正。&lt;/p&gt;
+&lt;h1 id=&quot;面试内容&quot;&gt;&lt;a href=&quot;#面试内容&quot; class=&quot;headerlink&quot; title=&quot;面试内容&quot;&gt;&lt;/a&gt;面试内容&lt;/h1&gt;&lt;p&gt;Q：简单介绍一下自己做过的项目，自己觉得有亮点的地方；&lt;/p&gt;
 &lt;p&gt;A：主要介绍了一下研究生期间做的事件抽取和访学期间做的文本分类；&lt;/p&gt;
 &lt;p&gt;简单介绍了一下其他项目；&lt;/p&gt;
 &lt;font color=&quot;red&quot;&gt;（虽然介绍了项目，但是感觉只是介绍了项目的大概，没有突出亮点）&lt;/font&gt;
@@ -375,12 +407,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;#面试概况&lt;/p&gt;
-&lt;p&gt;2016/03/04  17：30 电话面试（没通过）&lt;/p&gt;
-&lt;p&gt;#面试心得&lt;/p&gt;
-&lt;p&gt;在回答面试官的问题之前没有认真思考，态度不够积极端正。&lt;/p&gt;
-&lt;p&gt;#面试内容&lt;/p&gt;
-&lt;p&gt;Q：简单介绍一下自己做过的项目，自己觉得有亮点的地方；&lt;
+      &lt;h1 id=&quot;面试概况&quot;&gt;&lt;a href=&quot;#面试概况&quot; class=&quot;headerlink&quot; title=&quot;面试概况&quot;&gt;&lt;/a&gt;面试概况&lt;/h1&gt;&lt;p&gt;2016/03/04  17：30 电话面试（没通过）&lt;/p&gt;
+&lt;h1 id=&quot;面试心得&quot;&gt;&lt;a href=&quot;#面试心得&quot; 
     
     </summary>
     
