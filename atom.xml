@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-17T06:38:59.192Z</updated>
+  <updated>2016-03-17T06:41:20.606Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,11 +20,10 @@
     <link href="http://yoursite.com/2016/03/17/mozat-algorithm-1st-2nd-3rd-round-interview/"/>
     <id>http://yoursite.com/2016/03/17/mozat-algorithm-1st-2nd-3rd-round-interview/</id>
     <published>2016-03-17T06:35:33.000Z</published>
-    <updated>2016-03-17T06:38:59.192Z</updated>
+    <updated>2016-03-17T06:41:20.606Z</updated>
     
     <content type="html">&lt;h1 id=&quot;面试概况&quot;&gt;&lt;a href=&quot;#面试概况&quot; class=&quot;headerlink&quot; title=&quot;面试概况&quot;&gt;&lt;/a&gt;面试概况&lt;/h1&gt;&lt;p&gt;【一小部分题目忘记了】&lt;br&gt;2016/02/19 中午11：00-下午13：00&lt;/p&gt;
-&lt;p&gt;#第一轮面试：1100-1130，机器学习&lt;/p&gt;
-&lt;p&gt;（1）设计一个系统，实现搜索引擎侧边栏的相关推荐的功能。&lt;/p&gt;
+&lt;h2 id=&quot;第一轮面试：1100-1130，机器学习&quot;&gt;&lt;a href=&quot;#第一轮面试：1100-1130，机器学习&quot; class=&quot;headerlink&quot; title=&quot;第一轮面试：1100-1130，机器学习&quot;&gt;&lt;/a&gt;第一轮面试：1100-1130，机器学习&lt;/h2&gt;&lt;p&gt;（1）设计一个系统，实现搜索引擎侧边栏的相关推荐的功能。&lt;/p&gt;
 &lt;p&gt;网页=》提取文本=》预处理（SEG，POS，NER，PARSE）=》实体抽取=》实体关系抽取=》构件知识库=》进行推荐；&lt;/p&gt;
 &lt;p&gt;（2）分词原理，3-gram中的四字成语怎么办？&lt;/p&gt;
 &lt;p&gt;n-gram&lt;/p&gt;
@@ -77,7 +76,7 @@
     <summary type="html">
     
       &lt;h1 id=&quot;面试概况&quot;&gt;&lt;a href=&quot;#面试概况&quot; class=&quot;headerlink&quot; title=&quot;面试概况&quot;&gt;&lt;/a&gt;面试概况&lt;/h1&gt;&lt;p&gt;【一小部分题目忘记了】&lt;br&gt;2016/02/19 中午11：00-下午13：00&lt;/p&gt;
-&lt;p&gt;#第一轮面试：1100-1
+&lt;h2 id=&quot;第一轮面试：11
     
     </summary>
     
