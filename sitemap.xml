@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2016-03-17T02:33:45.914Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/css/style.css</loc>
+    
+    <lastmod>2016-03-17T02:30:46.156Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2016-03-17T02:22:04.972Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2016-03-17T02:21:39.012Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/tmp_index.html</loc>
+    
+    <lastmod>2016-03-17T02:16:07.120Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/03/16/old-post/</loc>
+    
+    <lastmod>2016-03-17T02:07:07.291Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/03/16/My-new-Post/</loc>
+    
+    <lastmod>2016-03-17T01:39:26.343Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/03/16/hello-world/</loc>
+    
+    <lastmod>2016-03-16T07:23:01.325Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/js/jquery.min.js</loc>
+    
+    <lastmod>2015-08-25T08:17:18.173Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/js/jquery.magnific-popup.js</loc>
+    
+    <lastmod>2015-08-25T08:17:18.150Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/css/popuo-box.css</loc>
+    
+    <lastmod>2015-08-25T08:17:18.069Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/css/dashboard.css</loc>
+    
+    <lastmod>2015-08-25T08:17:18.066Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/css/bootstrap.min.css</loc>
+    
+    <lastmod>2015-08-25T08:17:18.064Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/contact.html</loc>
+    
+    <lastmod>2015-08-25T08:17:18.060Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/css/bootstrap.css</loc>
+    
+    <lastmod>2014-06-16T08:02:34.000Z</lastmod>
+    
+  </url>
+  
+</urlset>
