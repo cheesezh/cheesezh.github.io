@@ -168,21 +168,12 @@ Quick">
 <aside class="clearfix">
 
   
-
-
-  
 <div class="categorieslist">
 	<p class="asidetitle">Categories</p>
 		<ul>
 		
 		  
-		
-		  
 			<li><a href="/categories/求职经验/" title="求职经验">求职经验<sup>7</sup></a></li>
-		  
-		
-		  
-		
 		  
 		
 		</ul>
@@ -196,10 +187,6 @@ Quick">
 		
 			
 				<li><a href="/tags/面试/" title="面试">面试<sup>7</sup></a></li>
-			
-		
-			
-		
 			
 		
 		</ul>
@@ -220,30 +207,9 @@ Quick">
 </div>
 
   
-
-
-  
   <div class="archiveslist">
     <p class="asidetitle"><a href="/archives">Archives</a></p>
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">8</span></li></ul>
-  </div>
-
-
-  
-  <div class="widget-wrap">
-    <h3 class="asidetitle">
-      Recent Comments
-    </h3>
-    <div class="widget">
-      <ul class="ds-recent-comments" 
-          data-num-items="10" 
-	  data-show-avatars="1" 
-	  data-show-time="1" 
-	  data-show-title="1" 
-	  data-show-admin="1" 
-	  data-excerpt-length="70">
-      </ul>
-    </div>
   </div>
 
 
@@ -491,6 +457,35 @@ var _hmt = _hmt || [];
 
 <!-- MathJax Begin -->
 <!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 <!-- MathJax End -->
