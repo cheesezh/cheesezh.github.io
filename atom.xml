@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://cheesezhe.github.io/"/>
-  <updated>2016-03-18T08:55:15.446Z</updated>
+  <updated>2016-03-18T08:57:55.308Z</updated>
   <id>http://cheesezhe.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://cheesezhe.github.io/2016/03/18/360-nlp-1st-round-interview/"/>
     <id>http://cheesezhe.github.io/2016/03/18/360-nlp-1st-round-interview/</id>
     <published>2016-03-18T07:53:34.000Z</published>
-    <updated>2016-03-18T08:55:15.446Z</updated>
+    <updated>2016-03-18T08:57:55.308Z</updated>
     
     <content type="html">&lt;h1 id=&quot;面试概况&quot;&gt;&lt;a href=&quot;#面试概况&quot; class=&quot;headerlink&quot; title=&quot;面试概况&quot;&gt;&lt;/a&gt;面试概况&lt;/h1&gt;&lt;p&gt;应聘岗位：奇虎360-搜索部门-自然语言处理工程师&lt;/p&gt;
 &lt;p&gt;面试时间：2016/03/18 15：22-15：50&lt;/p&gt;
@@ -30,16 +30,16 @@
 &lt;li&gt;个人简介（10分钟）&lt;/li&gt;
 &lt;li&gt;事件抽取（&lt;font color=&quot;red&quot;&gt;面试官对这个比较感兴趣，因为和语义网+知识图谱相关）&lt;/font&gt;&lt;ul&gt;
 &lt;li&gt;简介&lt;/li&gt;
-&lt;li&gt;事件的定义是什么？&lt;ul&gt;
+&lt;li&gt;&lt;font color=&quot;red&quot;&gt;事件的定义是什么？&lt;/font&gt;&lt;ul&gt;
 &lt;li&gt;balabala&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;讲了个例子“今天造成，一位国王派遣一位将军前往战场。”，结合这个例子分析了其中的事件，并将原子事件抽取与ACE等受事件类型约束的事件抽取进行了对比。&lt;/li&gt;
-&lt;li&gt;使用了什么方法？&lt;ul&gt;
+&lt;li&gt;&lt;font color=&quot;red&quot;&gt;使用了什么方法？&lt;/font&gt;&lt;ul&gt;
 &lt;li&gt;N元模型，改进的HMM&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;怎么改进的HMM？&lt;ul&gt;
+&lt;li&gt;&lt;font color=&quot;red&quot;&gt;怎么改进的HMM？&lt;/font&gt;&lt;ul&gt;
 &lt;li&gt;HMM基本组成以及假设；&lt;/li&gt;
 &lt;li&gt;第一点，进一步考虑历史状态的影响；&lt;/li&gt;
 &lt;li&gt;第二点，多观测序列；&lt;/li&gt;
@@ -47,7 +47,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;关于K-means的训练已经使用问了一些问题。&lt;/li&gt;
-&lt;li&gt;效果怎么样？&lt;ul&gt;
+&lt;li&gt;&lt;font color=&quot;red&quot;&gt;效果怎么样？&lt;/font&gt;&lt;ul&gt;
 &lt;li&gt;从60%提升到70%&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -55,11 +55,11 @@
 &lt;/li&gt;
 &lt;li&gt;医疗领域垂直搜索项目（这个没怎么聊）&lt;ul&gt;
 &lt;li&gt;简介&lt;/li&gt;
-&lt;li&gt;LDA效果怎么样？&lt;/li&gt;
+&lt;li&gt;&lt;font color=&quot;red&quot;&gt;LDA效果怎么样？&lt;/font&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;发表的论文&lt;/li&gt;
-&lt;li&gt;其他问题&lt;ul&gt;
+&lt;li&gt;&lt;font color=&quot;red&quot;&gt;其他问题&lt;/font&gt;&lt;ul&gt;
 &lt;li&gt;（1）怎么这么晚才找工作？很多公司都不提供户口了。&lt;/li&gt;
 &lt;li&gt;（2）手上有其他Offer吗？&lt;/li&gt;
 &lt;li&gt;（3）家是哪里的？&lt;/li&gt;
