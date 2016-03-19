@@ -4,38 +4,35 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>新加坡Mozat-算法工程师-第1+2+3轮面试 | Henry&#39;s Home</title>
+    <title>生成模型与判别模型的区别 | Henry&#39;s Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Henry">
     
 
     
-    <meta name="description" content="面试概况【一小部分题目忘记了】2016/02/19 中午11：00-下午13：00
-第一轮面试：1100-1130，机器学习（1）设计一个系统，实现搜索引擎侧边栏的相关推荐的功能。
-网页=》提取文本=》预处理（SEG，POS，NER，PARSE）=》实体抽取=》实体关系抽取=》构件知识库=》进行推荐；
-（2）分词原理，3-gram中的四字成语怎么办？
-n-gram
-（3）词性标注的功能是什么？命名">
+    <meta name="description" content="引言&amp;emsp;&amp;emsp;监督学习的任务就是学习一个模型，应用这一模型，对给定的输入预测相应的输出。这个模型的一般形式为决策函数：
+$$Y=f(x)$$
+或者条件概率分布：
+$$P(Y|X)$$
+&amp;emsp;&amp;emsp;监督学习方法又可以分为生成方法（generative approach）和判别方法（discriminative approach）。所学到的模型分别称为生成模型（generat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="新加坡Mozat-算法工程师-第1+2+3轮面试">
-<meta property="og:url" content="http://cheesezhe.github.io/2016/02/23/mozat-algorithm-1st-2nd-3rd-round-interview/index.html">
+<meta property="og:title" content="生成模型与判别模型的区别">
+<meta property="og:url" content="http://cheesezhe.github.io/2016/03/19/the-differences-between-generative-approach-and-discriminative-approach/index.html">
 <meta property="og:site_name" content="Henry's Home">
-<meta property="og:description" content="面试概况【一小部分题目忘记了】2016/02/19 中午11：00-下午13：00
-第一轮面试：1100-1130，机器学习（1）设计一个系统，实现搜索引擎侧边栏的相关推荐的功能。
-网页=》提取文本=》预处理（SEG，POS，NER，PARSE）=》实体抽取=》实体关系抽取=》构件知识库=》进行推荐；
-（2）分词原理，3-gram中的四字成语怎么办？
-n-gram
-（3）词性标注的功能是什么？命名">
-<meta property="og:updated_time" content="2016-03-17T12:32:29.211Z">
+<meta property="og:description" content="引言&amp;emsp;&amp;emsp;监督学习的任务就是学习一个模型，应用这一模型，对给定的输入预测相应的输出。这个模型的一般形式为决策函数：
+$$Y=f(x)$$
+或者条件概率分布：
+$$P(Y|X)$$
+&amp;emsp;&amp;emsp;监督学习方法又可以分为生成方法（generative approach）和判别方法（discriminative approach）。所学到的模型分别称为生成模型（generat">
+<meta property="og:updated_time" content="2016-03-19T12:47:03.459Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="新加坡Mozat-算法工程师-第1+2+3轮面试">
-<meta name="twitter:description" content="面试概况【一小部分题目忘记了】2016/02/19 中午11：00-下午13：00
-第一轮面试：1100-1130，机器学习（1）设计一个系统，实现搜索引擎侧边栏的相关推荐的功能。
-网页=》提取文本=》预处理（SEG，POS，NER，PARSE）=》实体抽取=》实体关系抽取=》构件知识库=》进行推荐；
-（2）分词原理，3-gram中的四字成语怎么办？
-n-gram
-（3）词性标注的功能是什么？命名">
+<meta name="twitter:title" content="生成模型与判别模型的区别">
+<meta name="twitter:description" content="引言&amp;emsp;&amp;emsp;监督学习的任务就是学习一个模型，应用这一模型，对给定的输入预测相应的输出。这个模型的一般形式为决策函数：
+$$Y=f(x)$$
+或者条件概率分布：
+$$P(Y|X)$$
+&amp;emsp;&amp;emsp;监督学习方法又可以分为生成方法（generative approach）和判别方法（discriminative approach）。所学到的模型分别称为生成模型（generat">
 
     
     <link rel="alternative" href="/atom.xml" title="Henry&#39;s Home" type="application/atom+xml">
@@ -94,14 +91,14 @@ n-gram
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/02/23/mozat-algorithm-1st-2nd-3rd-round-interview/" title="新加坡Mozat-算法工程师-第1+2+3轮面试" itemprop="url">新加坡Mozat-算法工程师-第1+2+3轮面试</a>
+      <a href="/2016/03/19/the-differences-between-generative-approach-and-discriminative-approach/" title="生成模型与判别模型的区别" itemprop="url">生成模型与判别模型的区别</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Henry" target="_blank" itemprop="author">Henry</a>
 		
   <p class="article-time">
-    <time datetime="2016-02-23T06:35:33.000Z" itemprop="datePublished"> Published 2016-02-23</time>
+    <time datetime="2016-03-19T12:47:03.000Z" itemprop="datePublished"> Published 2016-03-19</time>
     
   </p>
 </header>
@@ -110,59 +107,45 @@ n-gram
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#面试概况"><span class="toc-number">1.</span> <span class="toc-text">面试概况</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一轮面试：1100-1130，机器学习"><span class="toc-number">1.1.</span> <span class="toc-text">第一轮面试：1100-1130，机器学习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第二轮面试：1130-1215，后台开发"><span class="toc-number">1.2.</span> <span class="toc-text">第二轮面试：1130-1215，后台开发</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第三轮面试：1215-1300，CEO谈心"><span class="toc-number">1.3.</span> <span class="toc-text">第三轮面试：1215-1300，CEO谈心</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#引言"><span class="toc-number">1.</span> <span class="toc-text">引言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#概念"><span class="toc-number">2.</span> <span class="toc-text">概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#生成模型"><span class="toc-number">2.1.</span> <span class="toc-text">生成模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#判别模型"><span class="toc-number">2.2.</span> <span class="toc-text">判别模型</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#特点"><span class="toc-number">3.</span> <span class="toc-text">特点</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#生成方法"><span class="toc-number">3.1.</span> <span class="toc-text">生成方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#判别方法"><span class="toc-number">3.2.</span> <span class="toc-text">判别方法</span></a></li></ol></li></ol>
 		
 		</div>
 		
-		<h1 id="面试概况"><a href="#面试概况" class="headerlink" title="面试概况"></a>面试概况</h1><p>【一小部分题目忘记了】<br>2016/02/19 中午11：00-下午13：00</p>
-<h2 id="第一轮面试：1100-1130，机器学习"><a href="#第一轮面试：1100-1130，机器学习" class="headerlink" title="第一轮面试：1100-1130，机器学习"></a>第一轮面试：1100-1130，机器学习</h2><p>（1）设计一个系统，实现搜索引擎侧边栏的相关推荐的功能。</p>
-<p>网页=》提取文本=》预处理（SEG，POS，NER，PARSE）=》实体抽取=》实体关系抽取=》构件知识库=》进行推荐；</p>
-<p>（2）分词原理，3-gram中的四字成语怎么办？</p>
-<p>n-gram</p>
-<p>（3）词性标注的功能是什么？命名实体识别是什么？对句法分析的了解？停用词？</p>
-<p>pos是识别动名词等等；</p>
-<p>ner是识别人名，地名，机构名，时间等；</p>
-<p>句法分析效率较低，对文本长度限制严格，例如stanford 的句法分析文本长度限制170个字符；</p>
-<p>（4）设计一个系统实现实体抽取？</p>
-<p>将实体抽取转化为标注问题，然后使用hmm模型进行训练和标注；</p>
-<p>介绍了hmm的训练数据，模型的训练，模型的标注；</p>
-<p>（5）HMM的参数包含哪些？其训练以及预测过程是怎样的？</p>
-<p>介绍了hmm的三个组成（一个隐马尔科夫链，一个状态序列，一个观察序列）<br>三个参数（状态转移概率矩阵，发射矩阵，初始状态分布）</p>
-<p>训练算法（mle算法和em算法）；</p>
-<p>预测算法（viterbi算法）；</p>
-<p>（6）稀疏矩阵的存储？数据平滑？</p>
-<p>稀疏矩阵转换为1维线性结构；</p>
-<p>拉普拉斯平滑，防止概率为0的情况出现；</p>
-<p>（7）MLE与EM</p>
-<p>mle的原理是大数定理，适用于有监督训练；</p>
-<p>em的原理是使用上一次的结果进行迭代训练，用于训练含有隐藏变量的情况，适用于无监督训练；</p>
-<h2 id="第二轮面试：1130-1215，后台开发"><a href="#第二轮面试：1130-1215，后台开发" class="headerlink" title="第二轮面试：1130-1215，后台开发"></a>第二轮面试：1130-1215，后台开发</h2><p>（1）熟悉MySQL吗？使用什么存储引擎？</p>
-<p>用过MySQL，负责编写后台API中的php代码sql语句；</p>
-<p>InnoDB（默认的）</p>
-<p>（2）InnoDB和MyISAM的区别？原理？</p>
-<p>InnoDB采用B+树，叶结点为数据（部分指针），支持范围查询；</p>
-<p>MyISAM采用B-树，叶结点为指针；</p>
-<p>（4）如何实现1小时内只能登录5次？</p>
-<p>设计一个登录日志表，记录用户登录信息；</p>
-<p>（面试官提示：使用Redis缓存数据库）</p>
-<p>（5）http事务解析过程？</p>
-<p>域名解析=》dns解析=》tcp连接=》http请求=》服务器解析=》web root目录=》解析页面文件=》html代码=》浏览器解析html代码=》下载资源文件</p>
-<p>（6）如何实现n条数据随机取m条？并证明概率是m/n？可否通过一次遍历实现该功能？</p>
-<p>一个n序列，一个m序列，m次随机，从n中选取，如果冲突，就再随机；</p>
-<p>一个n序列，以m/n的概率随机选取；（面试官给出的方法）</p>
-<p>（7）如果数据n不确定，随机取m条，如何实现？</p>
-<p>前m条全部取出，然后第m+1条，以1/(m+1)的概率和前边一条数据置换，依次类推；</p>
-<p>（8）Apache和Nginx对比？</p>
-<p>Apache多进程，占用内存，消耗资源；</p>
-<p>Nginx多线程，节省资源，更适合反向代理以及静态文件，适合用于虚拟机；</p>
-<h2 id="第三轮面试：1215-1300，CEO谈心"><a href="#第三轮面试：1215-1300，CEO谈心" class="headerlink" title="第三轮面试：1215-1300，CEO谈心"></a>第三轮面试：1215-1300，CEO谈心</h2><p>（1）想了解公司哪些方面？</p>
-<p>技术团队；</p>
-<p>（2）未来三年计划？</p>
-<p>个人能力（技术方面，团队协作）</p>
-<p>（3）薪资期望？</p>
-<p>4000sg</p>
-<p>（4）业余爱好？</p>
-<p>跑步，读书，徒步</p>
+		<h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>&emsp;&emsp;监督学习的任务就是学习一个模型，应用这一模型，对给定的输入预测相应的输出。这个模型的一般形式为决策函数：</p>
+<p>$$Y=f(x)$$</p>
+<p>或者条件概率分布：</p>
+<p>$$P(Y|X)$$</p>
+<p>&emsp;&emsp;监督学习方法又可以分为生成方法（generative approach）和判别方法（discriminative approach）。所学到的模型分别称为生成模型（generative model）和判别模型（discriminative model）。</p>
+<h1 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h1><h2 id="生成模型"><a href="#生成模型" class="headerlink" title="生成模型"></a>生成模型</h2><p>&emsp;&emsp;生成方法由数据学习联合概率分布\(P(X,Y)\), 然后求出条件概率分布\(P(Y|X)\)作为预测的模型，即生成模型：</p>
+<p>$$P(Y|X)=\frac{P(X,Y)}{P(X)}$$</p>
+<p>这样的方法之所以称为生成方法，是因为模型表示了给定输入\(X\)产生输出\(Y\)的生成关系。</p>
+<p>典型的生成模型有：</p>
+<ol>
+<li>朴素贝叶斯法</li>
+<li>隐马尔科夫模型</li>
+</ol>
+<h2 id="判别模型"><a href="#判别模型" class="headerlink" title="判别模型"></a>判别模型</h2><p>&emsp;&emsp;判别方法由数据直接学习决策函数\(f(X)\)或者条件概率分布\(P(Y|X)\)作为预测的模型，即判别模型。判别方法关心的是对给定的输入\(X\)，应该预测什么样的输出\(Y\)。</p>
+<p>典型的判别模型有：</p>
+<ol>
+<li>K近邻法</li>
+<li>决策树</li>
+<li>逻辑回归模型</li>
+<li>最大熵模型</li>
+<li>支持向量机</li>
+<li>提升方法</li>
+<li>条件随机场</li>
+</ol>
+<h1 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h1><h2 id="生成方法"><a href="#生成方法" class="headerlink" title="生成方法"></a>生成方法</h2><ol>
+<li>生成方法可以还原出联合概率分布\(P(X,Y)\)，而判别方法不能</li>
+<li>生成方法的学习收敛速度更快，即当样本容量增加的时候，学到的模型可以更快的收敛于真实模型</li>
+<li>当存在隐含变量的时候，生成方法仍然有效，而判别方法则无效</li>
+<li>对数据分布做出的假设要求更强，效果好坏与数据分布是否符合假设有关</li>
+</ol>
+<h2 id="判别方法"><a href="#判别方法" class="headerlink" title="判别方法"></a>判别方法</h2><ol>
+<li>判别方法直接学习的是条件概率\(P(Y|X)\)或者决策函数\(f(X)\)，直接面对预测，往往学习的准确率更高</li>
+<li>由于直接学习\(P(Y|X)\)或\(f(X)\)，可以对数据进行各种程度上的抽象，定义特征并使用特征，因此可以简化学习问题</li>
+<li>对数据分布的假设要求不强</li>
+</ol>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -170,13 +153,13 @@ n-gram
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/求职经验/">求职经验</a>
+  <a class="article-category-link" href="/categories/机器学习/">机器学习</a>►<a class="article-category-link" href="/categories/机器学习/面试题/">面试题</a>
 </div>
 
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/面试/">面试</a>
+  <span></span> <a href="/tags/机器学习/">机器学习</a><a href="/tags/面试题/">面试题</a>
   </div>
 
 </div>
@@ -185,7 +168,7 @@ n-gram
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://cheesezhe.github.io/2016/02/23/mozat-algorithm-1st-2nd-3rd-round-interview/" data-title="新加坡Mozat-算法工程师-第1+2+3轮面试 | Henry&#39;s Home" data-tsina="undefined" class="share clearfix">
+	  <div data-url="http://cheesezhe.github.io/2016/03/19/the-differences-between-generative-approach-and-discriminative-approach/" data-title="生成模型与判别模型的区别 | Henry&#39;s Home" data-tsina="undefined" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -198,20 +181,20 @@ n-gram
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2016/02/23/kedaxunfei-nlp-1st-2nd-round-interview/" title="科大讯飞-自然语言处理研究员-第1+2轮面试">
-  <strong>上一篇：</strong><br/>
-  <span>
-  科大讯飞-自然语言处理研究员-第1+2轮面试</span>
+
+<div class="next">
+<a href="/2016/03/18/360-nlp-0th-round-interview/"  title="奇虎360-自然语言处理工程师-第0轮面试">
+ <strong>下一篇：</strong><br/> 
+ <span>奇虎360-自然语言处理工程师-第0轮面试
+</span>
 </a>
 </div>
-
 
 </nav>
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2016/02/23/mozat-algorithm-1st-2nd-3rd-round-interview/" data-title="新加坡Mozat-算法工程师-第1+2+3轮面试" data-url="http://cheesezhe.github.io/2016/02/23/mozat-algorithm-1st-2nd-3rd-round-interview/"></div>
+	<div class="ds-thread" data-thread-key="2016/03/19/the-differences-between-generative-approach-and-discriminative-approach/" data-title="生成模型与判别模型的区别" data-url="http://cheesezhe.github.io/2016/03/19/the-differences-between-generative-approach-and-discriminative-approach/"></div>
 </section>
 
 
@@ -221,7 +204,7 @@ n-gram
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#面试概况"><span class="toc-number">1.</span> <span class="toc-text">面试概况</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一轮面试：1100-1130，机器学习"><span class="toc-number">1.1.</span> <span class="toc-text">第一轮面试：1100-1130，机器学习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第二轮面试：1130-1215，后台开发"><span class="toc-number">1.2.</span> <span class="toc-text">第二轮面试：1130-1215，后台开发</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第三轮面试：1215-1300，CEO谈心"><span class="toc-number">1.3.</span> <span class="toc-text">第三轮面试：1215-1300，CEO谈心</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#引言"><span class="toc-number">1.</span> <span class="toc-text">引言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#概念"><span class="toc-number">2.</span> <span class="toc-text">概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#生成模型"><span class="toc-number">2.1.</span> <span class="toc-text">生成模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#判别模型"><span class="toc-number">2.2.</span> <span class="toc-text">判别模型</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#特点"><span class="toc-number">3.</span> <span class="toc-text">特点</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#生成方法"><span class="toc-number">3.1.</span> <span class="toc-text">生成方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#判别方法"><span class="toc-number">3.2.</span> <span class="toc-text">判别方法</span></a></li></ol></li></ol>
  
   </div>
 

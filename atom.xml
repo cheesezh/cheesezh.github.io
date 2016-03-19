@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://cheesezhe.github.io/"/>
-  <updated>2016-03-18T09:00:05.859Z</updated>
+  <updated>2016-03-19T12:47:03.459Z</updated>
   <id>http://cheesezhe.github.io/</id>
   
   <author>
@@ -14,6 +14,68 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>生成模型与判别模型的区别</title>
+    <link href="http://cheesezhe.github.io/2016/03/19/the-differences-between-generative-approach-and-discriminative-approach/"/>
+    <id>http://cheesezhe.github.io/2016/03/19/the-differences-between-generative-approach-and-discriminative-approach/</id>
+    <published>2016-03-19T12:47:03.000Z</published>
+    <updated>2016-03-19T12:47:03.459Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;监督学习的任务就是学习一个模型，应用这一模型，对给定的输入预测相应的输出。这个模型的一般形式为决策函数：&lt;/p&gt;
+&lt;p&gt;$$Y=f(x)$$&lt;/p&gt;
+&lt;p&gt;或者条件概率分布：&lt;/p&gt;
+&lt;p&gt;$$P(Y|X)$$&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;监督学习方法又可以分为生成方法（generative approach）和判别方法（discriminative approach）。所学到的模型分别称为生成模型（generative model）和判别模型（discriminative model）。&lt;/p&gt;
+&lt;h1 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h1&gt;&lt;h2 id=&quot;生成模型&quot;&gt;&lt;a href=&quot;#生成模型&quot; class=&quot;headerlink&quot; title=&quot;生成模型&quot;&gt;&lt;/a&gt;生成模型&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;生成方法由数据学习联合概率分布\(P(X,Y)\), 然后求出条件概率分布\(P(Y|X)\)作为预测的模型，即生成模型：&lt;/p&gt;
+&lt;p&gt;$$P(Y|X)=\frac{P(X,Y)}{P(X)}$$&lt;/p&gt;
+&lt;p&gt;这样的方法之所以称为生成方法，是因为模型表示了给定输入\(X\)产生输出\(Y\)的生成关系。&lt;/p&gt;
+&lt;p&gt;典型的生成模型有：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;朴素贝叶斯法&lt;/li&gt;
+&lt;li&gt;隐马尔科夫模型&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;判别模型&quot;&gt;&lt;a href=&quot;#判别模型&quot; class=&quot;headerlink&quot; title=&quot;判别模型&quot;&gt;&lt;/a&gt;判别模型&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;判别方法由数据直接学习决策函数\(f(X)\)或者条件概率分布\(P(Y|X)\)作为预测的模型，即判别模型。判别方法关心的是对给定的输入\(X\)，应该预测什么样的输出\(Y\)。&lt;/p&gt;
+&lt;p&gt;典型的判别模型有：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;K近邻法&lt;/li&gt;
+&lt;li&gt;决策树&lt;/li&gt;
+&lt;li&gt;逻辑回归模型&lt;/li&gt;
+&lt;li&gt;最大熵模型&lt;/li&gt;
+&lt;li&gt;支持向量机&lt;/li&gt;
+&lt;li&gt;提升方法&lt;/li&gt;
+&lt;li&gt;条件随机场&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;特点&quot;&gt;&lt;a href=&quot;#特点&quot; class=&quot;headerlink&quot; title=&quot;特点&quot;&gt;&lt;/a&gt;特点&lt;/h1&gt;&lt;h2 id=&quot;生成方法&quot;&gt;&lt;a href=&quot;#生成方法&quot; class=&quot;headerlink&quot; title=&quot;生成方法&quot;&gt;&lt;/a&gt;生成方法&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;生成方法可以还原出联合概率分布\(P(X,Y)\)，而判别方法不能&lt;/li&gt;
+&lt;li&gt;生成方法的学习收敛速度更快，即当样本容量增加的时候，学到的模型可以更快的收敛于真实模型&lt;/li&gt;
+&lt;li&gt;当存在隐含变量的时候，生成方法仍然有效，而判别方法则无效&lt;/li&gt;
+&lt;li&gt;对数据分布做出的假设要求更强，效果好坏与数据分布是否符合假设有关&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;判别方法&quot;&gt;&lt;a href=&quot;#判别方法&quot; class=&quot;headerlink&quot; title=&quot;判别方法&quot;&gt;&lt;/a&gt;判别方法&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;判别方法直接学习的是条件概率\(P(Y|X)\)或者决策函数\(f(X)\)，直接面对预测，往往学习的准确率更高&lt;/li&gt;
+&lt;li&gt;由于直接学习\(P(Y|X)\)或\(f(X)\)，可以对数据进行各种程度上的抽象，定义特征并使用特征，因此可以简化学习问题&lt;/li&gt;
+&lt;li&gt;对数据分布的假设要求不强&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;监督学习的任务就是学习一个模型，应用这一模型，对给定的输入预测相应的输出。这个模型的一般形式为决策函数：&lt;/p&gt;
+&lt;
+    
+    </summary>
+    
+      <category term="机器学习" scheme="http://cheesezhe.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="面试题" scheme="http://cheesezhe.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+      <category term="机器学习" scheme="http://cheesezhe.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="面试题" scheme="http://cheesezhe.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>奇虎360-自然语言处理工程师-第0轮面试</title>
